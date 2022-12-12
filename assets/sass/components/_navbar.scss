@@ -1,0 +1,19 @@
+nav {
+    .navbar-nav {
+        a{
+            font-weight:600;
+            color:#1e1e1e !important;
+            padding: 0.5rem 1rem !important;
+        }
+    }
+}
+.megamenu {
+    position: static;
+  
+    .dropdown-menu {
+        background: none;
+        border: none;
+        width: 100%;
+    }
+}
+

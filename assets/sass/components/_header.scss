@@ -1,0 +1,138 @@
+//===========================================
+// -Header start
+//===========================================
+
+.topcolors {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+        width: 25%;
+        height: 14px;
+        background: #007DC6;
+    }
+
+    span:nth-child(2) {
+        background: #F5821F;
+    }
+
+    span:nth-child(3) {
+        background: #8AC33E;
+    }
+
+    span:nth-child(4) {
+        background: #EE2E2A;
+    }
+}
+
+.tagline {
+    background: #60C4FF;
+    padding: 5px;
+    color: #1E1E1E;
+    font-size: 16px;
+    text-align:center;
+
+    a {
+        text-decoration: underline;
+        color: #1E1E1E;
+        text-transform: uppercase;
+    }
+}
+
+.toplinks {
+    
+    padding:15px 0 22px; 
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin:0;
+        padding-bottom: 14px;
+        border-bottom:1px solid #B6B6B6;
+
+        li {
+            list-style: none;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #6A6A6A;
+                font-size: 16px;
+                border-right: 1px solid #6A6A6A;
+                padding:0 12px;
+            }
+
+            &:last-child a {
+                border:none;
+            }
+        }
+    }
+}
+
+.logo-search {
+    display: flex;   
+}
+
+.topsearch-form {
+    width: 100%;
+    position: relative;
+    padding: 0 0 0 20px;
+
+    input[type="search"] {
+        padding: 20px 15px 20px 45px;
+        border-radius: 20px;
+        background-image: url('/assets/images/search.png');
+        background-repeat: no-repeat;
+        background-position: 12px 9px;
+    }
+}
+
+.mini-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    ul {
+      width: 100%;
+      padding-left: 0;
+      text-align: right;
+      margin-bottom: 0;
+      margin-top:12px;
+    }
+  
+    li {
+      list-style: none;
+      display: inline-block;
+
+      a{
+        display: block;
+        text-decoration: none;
+        color: #1E1E1E;
+        font-size: 16px;
+        border-right: 1px solid #6A6A6A;
+        padding:0 10px;
+        font-weight: 600;
+      }
+
+      &:last-child a {
+        border: 0;
+      }
+    }
+  }
+
+ .dropdown-menu.dropdown-cart {
+    min-width: 20rem;
+    margin-left: -10rem;
+ } 
+ 
+
+
+
+
+  
+
+//===========================================
+// -Header end
+//===========================================
