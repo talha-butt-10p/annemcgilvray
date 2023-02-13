@@ -1,0 +1,183 @@
+.showrooms-banner {
+  background: #D1E7B3;
+  min-height: 315px;
+  
+  .right-box {
+    width: 80%;
+    padding: 20px;
+    align-self: center;
+    
+    h1 {
+      font-family: $font-banner;
+      line-height: 60px;
+    }
+
+    a {
+      margin: 10px 0;
+      display: inline-block;
+      background: #fff;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+.show-rooms {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  
+  .boxes {
+    width: 50%;
+    text-align: center;
+
+    figure{
+      img {
+        border: 1px solid #DCDCDC;
+        display: inline-block;
+      }
+    }
+
+    figcaption{
+      h3 {
+        font-family: $font-banner;
+        color: #F5821F;
+        padding-bottom: 10px;
+      }
+
+      h5{
+        display: block;
+        font-weight: normal;
+      }
+      p{
+        color: #909090;
+      }
+    }
+
+    .room-list {
+      border-top: 1px solid #909090;
+      width: 50%;
+      margin:0 auto;
+
+      ul{
+        padding: 0;
+        li{
+          list-style: none;
+          color: #2DB1FF;
+          font-weight: 500;
+        }
+      }
+
+      a {
+        float: none;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+
+}
+
+.rooms-detail-banner {
+  background: url(/assets/images/showroom-banner.png) no-repeat;
+  background-size: 100%;
+  color: #fff;
+  padding: 20px 0;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  p {
+    font-size: 20px;
+  }
+
+  a{
+    float: none;
+  }
+
+}
+
+.address-hours {
+  .inner {
+    border: 1px solid #B6B6B6;
+    padding: 30px 25px;
+
+    h6 {
+      font-weight: normal;
+      color: #909090;
+      font-size: 20px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    a{
+      font-size: 20px;
+    }
+
+    strong {
+      color: #F5821F;
+      font-size: 20px;
+      padding: 0 0 15px;
+      display: block;
+    }
+  }
+
+  .show-cards {
+    .card {
+      background: #C6EAFF;
+      border-radius: 10px;
+      margin-bottom: 17px;
+
+      h4 {
+       color: #1E1E1E;
+       margin:0;
+       background: url(/assets/images/home-icon.png) no-repeat 0 100%;
+       padding-left: 50px;
+
+       strong{
+        display: block;
+        font-weight: 700;
+        padding: 10px 0 5px;
+       } 
+      }
+
+      a{
+        text-decoration: underline;
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+.show-map {
+  h4 {
+    font-family: $font-banner;
+    font-size: 22px;
+    color:#2DB1FF;
+    padding-top: 10px;
+  }
+
+  ul {
+    padding: 0 25px;
+    li{
+      padding: 10px 0;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    margin: 0 25px;
+    text-align: center;
+    float: none;
+
+    &:hover {
+      background-color: #B9DB8C;
+      border: 1px solid #B9DB8C;
+    }
+  }
+}

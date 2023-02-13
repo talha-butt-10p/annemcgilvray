@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/slick.css">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="/assets/sass/vendors/font-awesome.min.css">
+    <title>SASS</title>
+  </head>
+  <body>
+    <header>
+      <div class="topcolors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="tagline">
+        Join us at the September 15th 2022 Las Vegas Gifting tradeshow! <a href="javascript:;">SIGN UP NOW</a>
+      </div>
+      <div class="deskop-disp">
+        <div class="toplinks">
+          <div class="container">
+            <ul>
+              <li><a href="javascript:;">Find a rep</a></li>
+              <li><a href="javascript:;">Request appointment</a></li>
+              <li><a href="javascript:;">Showrooms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="logo-search">
+                  <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+                  <div class="topsearch-form">
+                    <div class="input-group rounded">
+                      <input type="search" class="form-control" placeholder="Search for the things you love...we've got them" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="mini-list">
+                  <ul>
+                    <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a></li>
+                    <li><a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
+                    <li class="dropdown my-cart-nav">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-cart" role="menu">
+                        <li>
+                          <span class="items d-flex">
+                            <span class=" item-left">
+                              <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                            </span>
+                            <span class=" text-left pl-3 w-75 item-right">
+                              <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                              <span>Min Qty: 3</span>
+                              <span class="cart-qty d-flex">
+                                <div class="input-group" style="width:50%">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-white btn-minuse" type="button">-</button>
+                                  </span>
+                                  <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-red btn-pluss" type="button">+</button>
+                                  </span>
+                                  </div><!-- /input-group -->
+                                  <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                                </span>
+                              </span>
+                            </span>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="" class="nav-link">Clothing</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Books</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Lifestyle</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Toys</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Paper</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="mobile-disp">
+        <div class="container">
+          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
+            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+            <div class="mini-list">
+              <ul class="d-flex align-items-center">
+                <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li class="dropdown my-cart-nav">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">11</span> </a><span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                      <span class="items d-flex">
+                        <span class=" item-left">
+                          <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                        </span>
+                        <span class=" text-left pl-3 w-75 item-right">
+                          <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                          <span>Min Qty: 3</span>
+                          <span class="cart-qty d-flex">
+                            <div class="input-group" style="width:50%">
+                              <span class="input-group-btn">
+                                <button class="btn btn-white btn-minuse" type="button">-</button>
+                              </span>
+                              <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                              <span class="input-group-btn">
+                                <button class="btn btn-red btn-pluss" type="button">+</button>
+                              </span>
+                              </div><!-- /input-group -->
+                              <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                            </span>
+                          </span>
+                        </span>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <!-- Mobile Toggle Button --> 
+              <div class="mnu-icon">
+                <div class="nav-right">
+                  <div class="button_btn" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Mobile Toggle Button -->
+                </ul>
+              </div>
+
+              
+
+          </div>
+          <div class="topsearch-form mb-3">
+            <div class="input-group rounded">
+              <input type="search" class="form-control" placeholder="Search for the things you love...we've got them">
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="sidebar">
+			<div class="menutagline">
+        <h2>Menu</h2>
+      </div>
+      <div class="mobile-nav-categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/shirts.png" alt=""></a></div><h3><a href="#">Clothing</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/frin113028.png" alt=""></a></div><h3><a href="#">Books</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/lifestyle.png" alt=""></a></div><h3><a href="#">Lifestyle</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/socksassess.png" alt=""></a></div><h3><a href="#">Accessories</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/flingo.png" alt=""></a></div><h3><a href="#">Toys</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/paper.png" alt=""></a></div><h3><a href="#">Paper</a></h3></li>
+        </ul>
+      </div>
+      <div class="mobile-main-nav">
+        <ul>
+          <li><a href="#">Find a rep</a></li>
+          <li><a href="#">Request appointment</a></li>
+          <li><a href="#">Showrooms</a></li>
+        </ul>
+      </div>
+      </div>
+      <!-- End Of Mobile Header -->
+    </header>
+    
+    <section class="heading">
+      <h1>Welcome to <strong>Anne McGilvray & Company</strong></h1>
+    </section>
+
+    <section class="about-slider">
+      <div class="about-slides">
+          <div>
+              <img src="assets/images/Rectangle 3.jpg" alt="recent-product" />
+          </div>
+          <div>
+              <img src="assets/images/Rectangle 4.jpg" alt="recent-product" />
+          </div>
+          <div>
+              <img src="assets/images/Rectangle 5.png" alt="recent-product" />
+          </div>
+          <div>
+              <img src="assets/images/Rectangle 6.png" alt="recent-product" />
+          </div>
+          <div>
+              <img src="assets/images/Rectangle 94.png" alt="recent-product" />
+          </div>
+          <div>
+            <img src="assets/images/Rectangle 4.jpg" alt="recent-product" />
+        </div>
+        <div>
+            <img src="assets/images/Rectangle 5.png" alt="recent-product" />
+        </div>
+        <div>
+            <img src="assets/images/Rectangle 6.png" alt="recent-product" />
+        </div>
+        <div>
+            <img src="assets/images/Rectangle 94.png" alt="recent-product" />
+        </div>
+    </div>
+  </section>
+
+  <section class="about-text">
+    <div class="container">
+      <div class="row">
+        <div class="col left-box">
+          <h3>We are here to help<br/> grow and manage your<br/> retail business!</h3>
+        </div>
+        <div class="col right-box">
+          <p>To do that, we have drawn on our forty-seven years of experience to bring together the industry’s best vendors, a team of professional sales representatives covering fifty states with four beautiful showrooms and full flexibility to order and sell online from the comfort of your home.</p>
+          <p>Our experienced sales team will guide you to products that will differentiate your store from the others. They will also ensure that you take advantage of the many perks and specials being offered by our showrooms and our vendors. Their job is to make your buying process as fruitful and enjoyable as possible.</p>
+          <p>You can turn to us for sales projections, product knowledge, trend management and display suggestions. You will profit from our extensive list of show specials and of course, you can count on us for unprecedented customer service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-map">
+    <div class="container">
+      <div class="row">
+        <div class="col left-box">
+          <img src="/assets/images/AMCI-MAP-1.png" />
+        </div>
+        <div class="col right-box">
+          <ul>
+            <li>
+              <h3>+120 brands</h3>
+              <p>selling on Anne McGilvray & Company</p>
+            </li>
+            <li>
+              <h3>4 showrooms</h3>
+              <p>in four different states of the USA</p>
+            </li>
+            <li>
+              <h3>+100.000</h3>
+              <p>square feet of awe-inspiring products in our four showrooms</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="about-listing">
+      <div class="container">
+        <h2>Top reasons to partner with us</h2>
+        <div class="card-group vgr-cards">
+          <div class="card">
+            <div class="card-img-body">
+            <img class="card-img" src="/assets/images/ab1.jpg">
+            </div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">We have something for everyone.</h4>
+              <p class="card-text">Our vendors represent the best of the best in a broad range of categories. We have something for everyone.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab2.jpg"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">A trained, professional sales force</h4>
+              <p class="card-text">Of over 130 strong and growing.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab3.jpg" alt="Card image cap"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">An impressive 77% of our team members</h4>
+              <p class="card-text">have been with us for five or more years. Which means loads of experience here to help you make product choices that fill your merchandise needs.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab2.jpg"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">A trained, professional sales force</h4>
+              <p class="card-text">Of over 130 strong and growing.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab3.jpg" alt="Card image cap"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">An impressive 77% of our team members</h4>
+              <p class="card-text">have been with us for five or more years. Which means loads of experience here to help you make product choices that fill your merchandise needs.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab2.jpg"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">A trained, professional sales force</h4>
+              <p class="card-text">Of over 130 strong and growing.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab3.jpg" alt="Card image cap"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">An impressive 77% of our team members</h4>
+              <p class="card-text">have been with us for five or more years. Which means loads of experience here to help you make product choices that fill your merchandise needs.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab2.jpg"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">A trained, professional sales force</h4>
+              <p class="card-text">Of over 130 strong and growing.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-body">
+              <img class="card-img" src="/assets/images/ab3.jpg" alt="Card image cap"></div>
+            <div class="card-body align-self-center">
+              <h4 class="card-title">An impressive 77% of our team members</h4>
+              <p class="card-text">have been with us for five or more years. Which means loads of experience here to help you make product choices that fill your merchandise needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <section class="explore-showrooms">
+    <div class="container">
+      <h3>We look forward to hosting you in <br />one of our four showrooms soon!</h3>
+      <button type="button" class="btn">Explore Our Showrooms</button>
+    </div>
+   </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Get Help</h3>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Newsletter</h3>
+              <p>Be the first one to know with our emails</p>
+              <div class="footer-news-letter-form d-flex">
+                <input type="email" placeholder="you-email@example.com">
+                <button class="btn-subscribe">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-social">
+             <ul>
+              <li><a href="#"><img src="assets/images/facebook.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-horizontal-nav">
+        <div class="container">
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/dist/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+  </body>
+</html>

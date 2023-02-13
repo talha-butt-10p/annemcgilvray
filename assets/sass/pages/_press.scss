@@ -1,0 +1,105 @@
+.press-banner {
+    background:url(/assets/images/Group-191.png) repeat-x top left;
+    padding: 75px 0 30px;
+    margin-top: 50px;
+
+    @include mq-only("xs", "sm") {
+      font-size: 30px;
+      h1 {
+        line-height: 60px;
+      }
+    }
+}
+
+.show-per-page {
+  a.dropdown-toggle {
+    border:1px solid #909090; 
+    border-radius: 7px;
+    position: relative;
+    padding: 8px 45px 8px 20px;
+    font-size: 15px;
+    font-weight: bold;
+
+    span {
+      color: #909090;
+      font-weight: normal;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .dropdown-toggle{
+      &:after {
+        content: url(/assets/images/dropdown.png);
+        position: absolute;
+        top: 5px;
+        border: 0;
+        right: 12px;
+      }
+    }
+  }
+
+  .card-horizontal {
+      display: flex;
+      flex: 1 1 auto;
+
+      @include mq-only("xs", "sm") {
+        display: inline;
+      }
+  }
+
+  .press-listing {
+    .card {
+      border: 0;
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      @include mq-only("xs", "sm") {
+        width:100%;
+      }
+
+      .img-square-wrapper {
+        border-right: 1px solid #909090;
+
+        @include mq-only("xs", "sm") {
+          border-right: 0;
+          border-bottom: 1px solid #909090;
+        }
+      }
+
+      .card-title {
+        font-weight: normal;
+        font-size: 22px;
+        color: #F5821F;
+        font-weight: 600;
+      }
+
+      h6 {
+        font-weight: normal;
+        font-size: 16px;
+        color: #909090;
+      }
+
+      p {
+         columns: #1E1E1E;
+         font-size: 16px;
+      }
+
+      .btn {
+        font-size: 15px;
+        border: 1px solid #1E1E1E;
+        border-radius: 8px;
+        padding: 6px 20px;
+      }
+
+      .card-body {
+        width:100%;
+      }
+    }
+
+    
+  }

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/slick.css">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="/assets/sass/vendors/font-awesome.min.css">
+    <title>SASS</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="topcolors">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="tagline">
+        Join us at the September 15th 2022 Las Vegas Gifting tradeshow! <a href="javascript:;">SIGN UP NOW</a>
+      </div>
+      <div class="deskop-disp">
+        <div class="toplinks">
+          <div class="container">
+            <ul>
+              <li><a href="javascript:;">Find a rep</a></li>
+              <li><a href="javascript:;">Request appointment</a></li>
+              <li><a href="javascript:;">Showrooms</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="logo-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="logo-search">
+                  <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+                  <div class="topsearch-form">
+                    <div class="input-group rounded">
+                      <input type="search" class="form-control" placeholder="Search for the things you love...we've got them" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="mini-list">
+                  <ul>
+                    <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a></li>
+                    <li><a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
+                    <li class="dropdown my-cart-nav">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdown-cart" role="menu">
+                        <li>
+                          <span class="items d-flex">
+                            <span class=" item-left">
+                              <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                            </span>
+                            <span class=" text-left pl-3 w-75 item-right">
+                              <h5>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h5>
+                              <span>Min Qty: 3</span>
+                              <span class="cart-qty d-flex">
+                                <div class="input-group" style="width:50%">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-white btn-minuse" type="button">-</button>
+                                  </span>
+                                  <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-red btn-pluss" type="button">+</button>
+                                  </span>
+                                  </div><!-- /input-group -->
+                                  <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                                </span>
+                              </span>
+                            </span>
+                          </li>
+                          
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="" class="nav-link">Clothing</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Books</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Lifestyle</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Toys</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Paper</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="mobile-disp">
+        <div class="container">
+          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
+            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+            <div class="mini-list">
+              <ul class="d-flex align-items-center">
+                <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+                <li class="dropdown my-cart-nav">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">11</span> </a><span class="caret"></span></a>
+                  <ul class="dropdown-menu dropdown-cart" role="menu">
+                    <li>
+                      <span class="items d-flex">
+                        <span class=" item-left">
+                          <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                        </span>
+                        <span class=" text-left pl-3 w-75 item-right">
+                          <h5>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h5>
+                          <span>Min Qty: 3</span>
+                          <span class="cart-qty d-flex">
+                            <div class="input-group" style="width:50%">
+                              <span class="input-group-btn">
+                                <button class="btn btn-white btn-minuse" type="button">-</button>
+                              </span>
+                              <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                              <span class="input-group-btn">
+                                <button class="btn btn-red btn-pluss" type="button">+</button>
+                              </span>
+                              </div><!-- /input-group -->
+                              <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                            </span>
+                          </span>
+                        </span>
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <!-- Mobile Toggle Button --> 
+              <div class="mnu-icon">
+                <div class="nav-right">
+                  <div class="button_btn" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Mobile Toggle Button -->
+                </ul>
+              </div>
+
+              
+
+          </div>
+          <div class="topsearch-form mb-3">
+            <div class="input-group rounded">
+              <input type="search" class="form-control" placeholder="Search for the things you love...we've got them">
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="sidebar">
+			<div class="menutagline">
+        <h2>Menu</h2>
+      </div>
+      <div class="mobile-nav-categories">
+        <h2>Categories</h2>
+        <ul>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/shirts.png" alt=""></a></div><h3><a href="#">Clothing</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/frin113028.png" alt=""></a></div><h3><a href="#">Books</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/lifestyle.png" alt=""></a></div><h3><a href="#">Lifestyle</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/socksassess.png" alt=""></a></div><h3><a href="#">Accessories</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/flingo.png" alt=""></a></div><h3><a href="#">Toys</a></h3></li>
+          <li><div class="thumbnail-roud"><a href="#"><img src="assets/images/paper.png" alt=""></a></div><h3><a href="#">Paper</a></h3></li>
+        </ul>
+      </div>
+      <div class="mobile-main-nav">
+        <ul>
+          <li><a href="#">Find a rep</a></li>
+          <li><a href="#">Request appointment</a></li>
+          <li><a href="#">Showrooms</a></li>
+        </ul>
+      </div>
+      </div>
+      <!-- End Of Mobile Header -->
+    </header>
+     
+    <section class="brands-banner" style="background: url(/assets/images/Rectangle117.png) no-repeat; background-size: 100%;">
+      <div class="container">
+        <figure>
+          <img src="/assets/images/Rectangle118.png" />
+        </figure>
+      </div>
+    </section>
+    
+    <section class="brand-inner-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Clever Idiots</h1>
+            
+            <ul class="order-qty">
+              <li>
+                Min. Order
+                <strong>$250</strong>
+              </li>
+              <li>
+                Re-Order
+                <strong>$250</strong>
+              </li>
+            </ul>
+
+            <ul class="brand-links">
+              <li><a href="javascript:;">View Specials</a></li>
+              <li><a href="javascript:;">Contact Sales Rep</a></li>
+              <li><a href="javascript:;">Shop Catalog</a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-6">
+            <div class="right-box">
+              <h4>About the Brand</h4>
+              <p>When you want fun, you want Clever Idiots. We’re all about the bright colors, cute characters and unique designs of Japanese culture, and now, we’re on a mission to bring it home to you.</p>
+              <a href="javascript:;">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-specials-box">
+      <div class="container">
+          
+        <div class="pink-box">
+          <h3>Brand Specials</h3>
+          <div class="desc">
+            <div class="row">
+              <div class="col-md-9">
+                <h4>Brand Order Minimum: $250</h4>
+                <p>$1,000 Free Freight on Holiday only orders – can combine X and X to reach $1,000.</p>
+              </div>
+              <div class="col-md-3">
+                <div class="days-left">8 days left</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="recently-viewed margin-top-40 border-bottom padding-bottom-50">
+      <div class="container">
+        <div class="heading-title mb-4">
+          <h2>Recently Purchased</h2>
+        </div>
+        <div class="recent-product-slider">
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view" data-toggle="modal" data-target="#productquickview">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <div class="d-flex">
+                <span class="tag tag-new">New!</span>
+                <span class="tag tag-best">Best Seller</span>
+              </div>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+          <div class="recent-product-box">
+            <div class="re-product-thumbnail">
+              <div class="btn-wish"><img src="assets/images/wishempty.png" alt="wisshlist" /></div>
+              <img src="assets/images/productimg.jpg" alt="recent-product" />
+              <a href="#" class="btn-quick-view">qucik view</a>
+            </div>
+            <div class="re-product-detail">
+              <span class="tag tag-new">New</span>
+              <h4 class="text-lit-gray">The Gone Fishin Coffee Mug</h4>
+              <ul class="re-prie">
+                <li>$7.50</li>
+                <li class="re-quantity text-lit-gray">Min: 6</li>
+              </ul>
+              <p class="wholsale mb-1 text-lit-gray">Wholesale Price</p>
+              <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
+              <button class="btn-add-cart ann-add-to-cart">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="brand-filters-cards">
+      <div class="container">
+        <div class="row">
+        <aside class="col-md-3">
+          
+      <div class="card">
+        
+        <div class="left-search">
+          <input type="text" class="form-control" placeholder="Search Brands">
+          <i class="fa fa-search"></i>
+        </div>
+        
+        <div class="show-per-page">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <span>Sort by: </span> Brand Name
+            </a>
+          
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <br class="clear" />
+        </div>
+
+        <article class="filter-group">
+          <header class="card-header">
+            <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" class="">
+              <i class="icon-control fa fa-chevron-down"></i>
+              <h6 class="title">Category </h6>
+            </a>
+          </header>
+          <div class="filter-content collapse show" id="collapse_2">
+            <div class="card-body">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Mercedes </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Toyota</div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Mitsubishi</div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Nissan </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Honda </div>
+              </label>
+        </div> <!-- card-body.// -->
+          </div>
+        </article> <!-- filter-group .// -->
+
+        <article class="filter-group">
+          <header class="card-header">
+            <a href="#" data-toggle="collapse" data-target="#collapse_2" aria-expanded="false" class="collapsed">
+              <i class="icon-control fa fa-chevron-down"></i>
+              <h6 class="title">Price </h6>
+            </a>
+          </header>
+          <div class="filter-content collapse" id="collapse_2">
+            <div class="card-body">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">$200 - $300 </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">$400 - $500 </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">$500 - $600 </div>
+              </label>
+        </div> <!-- card-body.// -->
+          </div>
+        </article> <!-- filter-group .// -->
+
+        <article class="filter-group">
+          <header class="card-header">
+            <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="false" class="collapsed">
+              <i class="icon-control fa fa-chevron-down"></i>
+              <h6 class="title">Min Order </h6>
+            </a>
+          </header>
+          <div class="filter-content collapse" id="collapse_3">
+            <div class="card-body">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Mercedes </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Toyota </div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Mitsubishi</div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Nissan</div>
+              </label>
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <div class="custom-control-label">Honda</div>
+              </label>
+        </div> <!-- card-body.// -->
+          </div>
+        </article> <!-- filter-group .// -->
+      </div> <!-- card.// -->
+      
+        </aside>
+        <main class="col-md-9">
+      
+      <header class="brands-showall mb-4">
+        
+        <h3>All Products</h3>
+        
+      <div class="show-per-page">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <span>Show</span> 100 items per page
+            </a>
+          
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+      </div>
+
+      <br class="clear"/>
+            
+      </header><!-- sect-heading -->
+      
+      <div class="product-grids row">
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br1.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Andrews McMeel Publishing</h5>
+              <a href="#">Shop Brand</a>
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br2.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Big Mouth</h5>
+              <a href="#">Shop Brand</a>
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br3.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Eleni’s Cookies</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br4.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Elum Designs</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br5.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Grandpa Joe's Candy Shop</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      </div>
+
+      <div class="product-grids row">
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br6.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>HarperCollins Publishers</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br7.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>IPG Book</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br8.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Madd Capp Games & Puzzles</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br9.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Make Believe Ideas</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br9.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Mideer</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+        
+      </div> <!-- row end.// -->
+
+      <div class="product-grids row">
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br10.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>My Mini Cosmo</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br11.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Nice Enough Stickers</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+      
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br12.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>NodPod</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br13.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Noted</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+
+        <div class="col">
+          <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+              <img src="/assets/images/br14.png" class="img-fluid">
+            </div> <!-- img-wrap.// -->
+            <div class="info-wrap">
+              <h5>Paladone</h5>
+              <a href="#">Shop Brand</a>	
+            </div>
+          </figure>
+        </div> <!-- col.// -->
+        
+      </div> <!-- row end.// -->
+      
+      
+      <div class="pagination-bar">
+        <ul class="pagination pagination-sm justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+     </div>
+      
+        </main>
+        </div>
+      </div>
+    </div>
+
+    <section class="search-banner pt-5 pb-5">
+      <div class="container">
+        <div class="search-banner-wrapper">
+          <div class="trending-searcch-box">
+            <p>With over 100 brands and more than 1 million products,<br> 
+              <strong>we are your one-stop wholesale shop!</strong></p>
+              <div class="form-group has-search">
+                <input type="text" class="form-control" placeholder="Search for the things you love...we´ve got them">
+            </div>
+          </div>
+          <div class="trending-tags">
+            <h2>Trending now:</h2>
+            <ul>
+              <li><a href="#">Candles</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Christmas Decor</a></li>
+              <li><a href="#">Denim Jacket</a></li>
+              <li><a href="#">Sweat Shirt</a></li>
+              <li><a href="#">Vase</a></li>
+            </ul>
+            <a class="see-all-cta" href="#">See all trending items</a>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section class="bussiness-grow">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="align-items-center d-flex justify-content-center left-avatar-content">
+              <div class="avatar-md">
+                <img src="assets/images/anne-avatar.png" alt="Avatar">
+              </div>
+              <h2>We’re here to grow <br> your business!</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex h-100 para-content align-items-center">
+              <p>Since 1975, we have been a one-stop shop for our vendors, selling to every type of retailer via our team of professional sales and representatives covering fifty states, four beautiful showrooms and 24/7 online marketplace.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topcolors">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Get Help</h3>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-verticle-nav">
+              <h3>Newsletter</h3>
+              <p>Be the first one to know with our emails</p>
+              <div class="footer-news-letter-form d-flex">
+                <input type="email" placeholder="you-email@example.com">
+                <button class="btn-subscribe">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-widget footer-social">
+             <ul>
+              <li><a href="#"><img src="assets/images/facebook.png" alt="facebook"></a></li>
+              <li><a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-horizontal-nav">
+        <div class="container">
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/dist/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+  </body>
+</html>

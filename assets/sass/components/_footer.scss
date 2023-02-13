@@ -1,7 +1,119 @@
 //===========================================
 // -Footer start
 //===========================================
+footer {
+  margin-top: 30px;
+  .footer-widget {
+    h3 {
+      color: $neturalgray;
+      border-bottom: 1px solid #6a6a6a;
+      font-size: 16px;
+      padding-bottom: 15px;
+      @include mq("md", max) {
+        margin-top: 30px;
+      }
+    }
+    &.footer-verticle-nav {
+      ul {
+        margin: 0;
+        padding: 0;
 
+        li {
+          list-style: none;
+          margin-bottom: 15px;
+
+          a {
+            color: $neturalgray;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .footer-news-letter-form {
+      .btn-subscribe {
+        padding: 8px 16px;
+        background: #b9db8c;
+        border-radius: 0px 8px 8px 0px;
+        border: none;
+      }
+      input[type="email"] {
+        border: 1px solid #b6b6b6;
+        border-radius: 8px 0px 0px 8px;
+        padding: 8px 16px;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      white-space: nowrap;
+      color: $neturalgray;
+    }
+
+    &.footer-social {
+      ul {
+        margin: 0px;
+        margin-top: 47px;
+        padding: 0px;
+        display: flex;
+        justify-content: end;
+        @include mq("md", max) {
+          justify-content: start;
+        }
+        li {
+          list-style: none;
+
+          &:first-child {
+            margin-right: 15px;
+          }
+
+          a {
+          }
+        }
+      }
+    }
+  }
+
+  .footer-horizontal-nav {
+    border-top: 0.5px solid #b6b6b6;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    ul {
+      margin: 0;
+      padding: 15px 0px;
+      display: flex;
+      justify-content: end;
+
+      @include mq("md", max) {
+        justify-content: start;
+        flex-wrap: wrap;
+      }
+      li {
+        list-style: none;
+        margin: 0px 8px;
+        border-right: 1px solid $neturalgray;
+        padding-right: 16px;
+        @include mq("md", max) {
+          margin-bottom: 15px;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+          border-right: 0;
+          padding-right: 0;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
 //===========================================
 // -Footer end
 //===========================================

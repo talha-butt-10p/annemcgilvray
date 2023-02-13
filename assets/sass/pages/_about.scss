@@ -1,0 +1,302 @@
+.heading {
+  
+  text-align: center;
+  padding: 20px 0;
+
+  h1 {
+    font-size: 40px;
+    color: #1E1E1E;
+
+    strong {
+      color: #F25C59;
+      font-weight: 600;
+    }
+  }
+
+  @include mq-only("xs", "sm") {
+    padding: 20px 20px 10px;
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+}
+
+.vgr-cards {
+  .card {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    margin-bottom: 40px;
+
+    &:nth-child(even) 
+    .card-img-body {
+      order: 2;
+    }
+
+    &:nth-child(even) .card-body {
+      .card-title {
+        text-align: right;
+      }
+      .card-text {
+        text-align: right;
+      }
+
+      @include mq-only("xs", "sm") {
+        .card-title {
+          text-align: center;
+          padding-top: 30px;
+          line-height: 35px;
+        }
+        .card-text {
+          text-align: center;
+        }
+      }
+    }
+    
+
+    &:nth-child(even) .card-body {
+      padding-left: 0;
+      padding-right: 1.25rem;
+    }
+
+    @include mq-only("xs", "sm") {
+
+      text-align: center;
+      
+      .card-img {
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    &:nth-child(odd) .card-body {
+      .card-title {
+        width:75%;
+      }
+      .card-text {
+        width:75%;
+      }
+
+      @include mq-only("xs", "sm") {
+        .card-title{
+          width: 100%;
+          padding-top: 30px;
+          line-height: 35px;
+        }
+        
+        .card-text {
+          width: 100%;
+        }
+
+    }
+  }
+
+    
+    @media (max-width: 576px) {
+      display: block;
+    }
+
+    .card-title {
+      font-size: 28px;
+    }
+
+    &:first-child{
+      .card-title {
+        color: #009DF9;
+      }
+    }
+
+    &:nth-child(2){
+      .card-title {
+        color: #8AC33E;
+      }
+    }
+
+    &:nth-child(3){
+      .card-title {
+        color: #EE2E2A;
+      }
+    }
+
+    &:nth-child(4){
+      .card-title {
+        color: #F5821F;
+      }
+    }
+
+    &:nth-child(5){
+      .card-title {
+        color: #009DF9;
+      }
+    }
+
+    &:nth-child(6){
+      .card-title {
+        color: #8AC33E;
+      }
+    }
+
+    &:nth-child(7){
+      .card-title {
+        color: #EE2E2A;
+      }
+    }
+
+    &:nth-child(8){
+      .card-title {
+        color: #F5821F;
+      }
+    }
+
+    &:last-child{
+      .card-title {
+        color: #009DF9;
+      }
+    }
+  }
+  
+  
+}
+
+.about-slides {
+
+  background: url(/assets/images/Group-191.png) top repeat-x, url(/assets/images/Group-191.png) bottom repeat-x;
+  padding: 80px 0;
+  margin: 20px 0 40px;
+
+  .slick-slide {
+    height: 316px;
+    margin: 0 10px;
+    text-align: center;
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .slick-prev {
+    top: 220px;
+  }
+  
+  .slick-next {
+    top: 220px;
+  }
+}
+
+.about-text {
+  .left-box {
+    padding-left:10%;
+  }
+  .right-box{
+    padding-right: 10%;
+  }
+  h3 {
+    font-family: $font-banner;
+    color: #F5821F;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 600;
+  }
+
+  @include mq-only("xs", "sm") {
+    .row {
+      display: inline;
+
+      .left-box  {
+        padding-left: 10px;
+      }
+      
+      .right-box{
+        padding-right: 0;
+      }
+
+      h3 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+.about-map {
+  background: #93D7FF;
+  padding: 20px 0;
+  margin: 30px 0;
+  .right-box {
+    li {
+      list-style:none;
+      padding: 15px 0 20px;
+    }
+    padding: 3% 0 0%;
+    h3 {
+      font-family: $font-banner;
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @include mq-only("xs", "sm") {
+    .row {
+      display: inline;
+
+      .right-box {
+        ul {
+          padding-left:10px;
+        }
+      }
+    }
+  }
+}
+
+.about-listing {
+  h2{
+    font-family: $font-banner;
+    font-size: 40px;
+    padding: 30px 0 50px;
+    text-align: center;
+  }
+
+  .card-body {
+      flex: 2;
+      padding: 0 0 0 1.25rem;
+      
+      @media (max-width: 576px) {
+        padding: 0;
+      }
+      
+  }
+
+  @include mq-only("xs", "sm") {
+    h2{
+      font-size: 30px;
+      line-height: 40px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.explore-showrooms {
+  background: url(/assets/images/Dallas-Showplace.png);
+  text-align:center;
+  padding: 100px 0;
+  h3 {
+    padding-bottom: 10px;
+    font-size: 28px;
+    color:#fff;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+  .btn {
+    background: #B9DB8C;
+    color:#1E1E1E; 
+    border: 0;
+    padding: 8px 25px;
+  }
+}

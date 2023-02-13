@@ -1,0 +1,67 @@
+.login-section{
+  display: flex;
+
+  .col {
+    padding: 0;
+
+    figure{
+      margin: 0;
+    }
+  }
+
+  @include mq-only("xs", "sm") {
+    .left-box {
+      display: none;
+    }
+  }
+
+  .right-box {
+
+    padding: 20px 0;
+    display: table;
+    background: url(/assets/images/Group-191.png) 0 30px repeat-x, url(/assets/images/Group-191.png) 0 96% repeat-x;
+    
+    .login-form{      
+      padding: 10%;
+
+      .forgot-link {
+        text-align: right;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .signuplink {
+        text-align: center;
+      }
+
+      .form-control {
+        border-radius: 0;
+      }
+
+      h1 {
+        color: #F5821F;
+      }
+
+      label {
+        font-family: $font-default;
+      }
+    }
+
+    .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+      width: 100%;
+    }
+
+    @include mq-only("xs", "sm") {
+      padding: 20% 0;
+    }
+
+  }
+}
+

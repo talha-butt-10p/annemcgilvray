@@ -1,0 +1,178 @@
+.career-header {
+  h1{
+    line-height: 60px;
+    @include mq("md", max) {
+      font-size: 40px;
+    }
+  }
+  
+}
+
+.jobs-text {
+  background: #FEEFE2;
+  font-size: 25px;
+  margin:0px 0 20px; 
+  padding: 150px 0 40px; 
+  position: relative;
+  margin-top: -100px;
+  z-index: -1;
+  
+  .center-box {
+    width: 900px;
+    font-weight: 600;
+    margin:0 auto;
+    text-align: center;
+    
+    @include mq-only("xs", "sm") {
+      width: 100%;
+    }
+
+    p {
+      font-size:26px; 
+    }
+    .btn {
+      font-weight: 500;
+    }
+  }
+}
+
+.career-slider {
+  margin-top: 40px;
+}
+
+.career-slides {
+    .slick-slide {
+      height: 316px;
+      margin: 0 10px;
+      text-align: center;
+      img {
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+}
+
+.career-featured {
+  .card{
+    border: 0;
+
+    .card-body{
+      padding-bottom: 35px;
+
+      @include mq-only("xs", "sm") {
+        padding: 15px 0 15px 0;
+      }
+    }
+
+    .card-title {
+      font-size: 28px;
+      padding:15px 0 0;
+      font-weight: 600;
+    }
+
+    &:first-child {
+      .card-title {
+        color: #009DF9;
+      }
+    }
+
+    &:nth-child(2) {
+      .card-title {
+        color: #F79D50;
+      }
+    }
+
+    &:nth-child(3) {
+      .card-title {
+        color: #A2CF65;
+      }
+    }
+    
+    &:last-child {
+      .card-title {
+        color: #F25C59;
+      }
+    }
+  }
+}
+
+.our-values {
+  padding: 20px 0;
+
+  .left-side {
+    font-family: $font-banner;
+    h6 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 57px;
+      padding-top: 10px;
+
+      @include mq-only("xs", "sm") {
+        font-size: 30px;
+        line-height: 45px;  
+      }
+    }
+  }
+}
+
+
+.career-bluebox {
+  padding: 40px 0;
+  background: #009DF9;
+  font-size: 16px;
+  
+  .left-side {
+    padding: 30px 0;
+    color:#fff;
+    width: 85%;
+    float: right;
+
+    @include mq-only("xs", "sm") {
+      width: 100%;
+      float:none;
+    }
+    
+    h3 {
+      font-family: $font-banner;
+      font-weight: 500;
+      font-size: 40px;
+      padding: 50px 20px 50px 0;
+      line-height: 55px;
+
+      @include mq-only("xs", "sm") {
+        font-size: 27px;
+        line-height: 35px;
+      }
+    }
+
+    .right-side {
+      float: right;
+
+      @include mq-only("xs", "sm") {
+        margin:10px;
+      }
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+
+.email-us-box {
+  background: #E8F3DA;
+  text-align:center;
+  padding: 50px 0;
+  h3 {
+    padding-bottom: 10px;
+    font-size: 28px;
+  }
+}

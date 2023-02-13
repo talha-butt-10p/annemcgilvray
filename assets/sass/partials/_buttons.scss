@@ -2,13 +2,24 @@
 // -Buttons start
 //===========================================
 
-.btn {
-  cursor: pointer;
-  &[disabled],
-  &.disabled {
-    cursor: not-allowed;
-  }
+/*.btn {
+    font-size: 15px;
+    border: 1px solid #1E1E1E;
+    border-radius: 8px;
+    padding: 6px 20px;
+
+    cursor: pointer;
+    &[disabled],
+    &.disabled {
+      cursor: not-allowed;
+    }
+}*/
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
+
 //===========================================
 // -Buttons end
 //===========================================

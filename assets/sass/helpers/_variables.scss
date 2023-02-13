@@ -9,12 +9,27 @@ $default: red;
 $primary: green;
 $secondary: blue;
 $alternate: cyan;
+$cart-input-border:#909090;
+$btngreen:#B9DB8C;
+$text-black:#1E1E1E;
+$orrange:#F5821F;
+$whiteclr:white;
+$yellowclr:#F6E33F;
+$blueclr:#007DC6;
+$orrangeclr:#F5821F;
+$placeholdergray:#B6B6B6;
+$primery-blue:#60C4FF;
+$neturalgray:#6A6A6A;
+$orrangeDark:#F79D50;
+$lightBlue:#009DF9;
+
 
 // Typography Family
-$font-default: 'Work Sans', sans-serif;
-$font-primery: "Montserrat", sans-serif;
 
-$font-path: "../fonts";
+$font-default: 'Work Sans', sans-serif;
+$font-banner: 'Stratos';
+
+$font-path: "/assets/fonts";
 
 // define your Break Points or override bootstrap Break Points
 $grid-breakpoints: (
@@ -22,7 +37,11 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
+  xxl:1300px,
+  xxxl:1400px,
+  xxxxl:1500px,
+
 );
 
 // ===========================================

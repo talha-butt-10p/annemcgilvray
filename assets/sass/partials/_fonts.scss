@@ -2,7 +2,8 @@
 // -Fonts start
 //===========================================
 
-@include font-face("family", $font-path, "Roboto-Regular", 400, "normal");
+@include font-face($font-banner, $font-path, "Stratos-Regular", 400, "normal");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 //===========================================
 // -Fonts  end

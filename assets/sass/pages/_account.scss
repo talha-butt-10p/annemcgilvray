@@ -1,0 +1,42 @@
+.account-welcome-text {
+  h2 {
+    text-align: center;
+    color: #007DC6;
+  }
+}
+
+.account-orders {
+  
+  h4{
+    font-family: $font-banner;
+    font-size:22px;
+    color:#F5821F;
+    padding-bottom:10px;
+  }
+
+  h6{
+    color: #B6B6B6;
+    font-weight: normal;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .overview-rep {
+    
+    .card{
+      border:1px solid #DCDCDC;
+      padding: 5px;
+
+      a.borderbtn {
+        display: block;
+        text-align: center;
+        float: none;
+      }
+    }
+  }
+
+  .recent-orders {
+      border:1px solid #DCDCDC;
+      padding: 20px;
+    }
+  }
