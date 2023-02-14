@@ -208,6 +208,10 @@
      padding: 15px 0;
      h5 {
       font-size:20px;
+      @include mq-only("xs", "sm") {
+        font-size: 16px;
+        line-height: 22px;
+      }
      }
 
      a{
@@ -252,6 +256,11 @@
 
   .show-per-page {
     float: right;
+    @include mq-only("xs", "sm") {
+     float:none;
+     display: block;
+     clear: both;   
+    }
   }
 }
 

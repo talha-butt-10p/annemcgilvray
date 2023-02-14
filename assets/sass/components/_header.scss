@@ -120,8 +120,19 @@
         font-weight: 600;
       }
 
-      &:last-child a {
-        border: 0;
+      &:first-child {
+        a{
+            i{
+                font-size:18px;
+                margin-right: 3px;
+            }
+        }
+      }
+
+      &:last-child {
+        a{
+            border: 0;
+        }
       }
 
       &.my-cart-nav{
@@ -167,6 +178,7 @@
     .item-right {
         h4 {
             font-size: 16px;
+            line-height: 20px;
         } 
     }
  } 
@@ -174,6 +186,9 @@
  .my-cart-nav{
     .dropdown-cart{
         .cart-qty{
+
+            margin-top: 10px;
+
             .input-group{
                 outline: none;
                 border: 1px solid $cart-input-border;
@@ -190,7 +205,8 @@
                     }
                 }
                 button{
-                    padding: 8px;
+                    padding: 2px 16px;
+                    font-size: 20px;
                 }
             }
         }

@@ -1,3 +1,13 @@
+.findrep-banner{
+  background-size: 100%; 
+  height: 195px; 
+  background-repeat: no-repeat;
+
+  @include mq-only("xs", "sm") {
+    height: 70px;
+  }
+}
+
 .find-rep-sec {
   .form-sec {
     width: 50%;
@@ -30,6 +40,10 @@
       padding: 7px 15px;
       border-radius: 0px 10px 10px 0px;
     }
+
+    @include mq-only("xs", "sm") {
+      width: 100%;
+    }
   }
 }
 
@@ -41,6 +55,16 @@
 
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .product-grids  {
+    .col {
+      flex: 20%;
+      
+      @include mq-only("xs", "sm") {
+        flex: 50%;
       }
     }
   }
@@ -62,6 +86,10 @@
     width: 212px;
     height: 212px;
 
+    @include mq-only("xs", "sm") {
+      width: 135px;
+    }
+
     figcaption {
       position: absolute;
       top: 35px;
@@ -69,6 +97,16 @@
       width: 100%;
       margin-left: 20px;
 
+      @include mq-only("xs", "sm") {
+        top:0;
+        width:220px;
+
+        h1 {
+          font-size:42px;
+          padding: 15px 0 12px;
+        }
+      }
+      
       h1,h3 {
         color: #1E1E1E;
       }
@@ -93,34 +131,77 @@
     li{
         float: left;
         margin-right: 20px;
+
+        @include mq-only("xs", "sm") {
+          float:none;
+
+          a.borderbtn {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin: 15px 0;
+            padding: 10px;
+          }
+        }
     }
   }
 
   .rep-bio-right {
     width: 350px;
     float: right;
+
     h5 {
       color: #007DC6;
     }
     .borderbtn {
       float: left;
       margin-top: 5px;
+
+      @include mq-only("xs", "sm") {
+        width:100%;
+        float:none;
+        padding: 10px;
+        display: block;
+        text-align: center;
+      }
     }
 
     li {
       margin: 10px 0;
+
+      @include mq-only("xs", "sm") {
+        margin:20px 0;
+      }
       
       &:first-child {
         a{
           background: url(/assets/images/phone.png) no-repeat;
           padding: 0px 0px 3px 30px;
+
+          @include mq-only("xs", "sm") {
+            padding: 0px 0px 7px 30px;
+          }
         }
       }
       &:nth-child(2) {
         a{
           background: url(/assets/images/mail.png) no-repeat;
           padding: 2px 0px 0px 30px;
+
+          @include mq-only("xs", "sm") {
+            padding: 2px 0px 3px 30px;
+          }
         }
+      }
+    }
+
+    @include mq-only("xs", "sm") {
+      float:left;
+      
+      h5 {
+        font-size: 28px;
+        padding: 10px 0;
+        font-weight: 600;
       }
     }
     
