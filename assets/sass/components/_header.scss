@@ -27,6 +27,7 @@
 }
 
 .tagline {
+    font-family: $font-default;
     background: #60C4FF;
     padding: 5px;
     color: #1E1E1E;
@@ -84,6 +85,10 @@
     position: relative;
     padding: 0 0 0 20px;
 
+    @include mq-only("xs", "sm") {
+        padding: 0;
+    }
+
     input[type="search"] {
         padding: 20px 15px 20px 45px;
         border-radius: 20px;
@@ -103,7 +108,6 @@
       padding-left: 0;
       text-align: right;
       margin-bottom: 0;
-      margin-top:12px;
     }
   
     li {
@@ -153,38 +157,37 @@
     }
   }
 
- .dropdown-menu.dropdown-cart {
-    min-width: 430px;
-    margin-left: -10rem;
-    display: -ms-flexbox;
+.shopping-cart {
+
+    position: absolute;
+    z-index: 1;
+    left: -22rem;
+    background: #fff;
+    border: 1px solid #efefef;
+    top: 3rem;
+    border-radius: 4px;
     display: none;
-    padding: 20px;
-    
-    &.show{
-        display: flex;
-        left: -80px!important;
-    }
 
-    .item {
-        display: flex;
-        flex-grow: 2;
-    }
+    .shopping-cart-items {
+        min-width: 430px;
+        display: -ms-flexbox;
+        padding: 20px;
+        max-height: 165px;
+        overflow-y: scroll;
+        
+        .item-left {
+        width: 100px;
+        height: 100px;  
+        }
 
-    .item-left {
-     width: 100px;
-     height: 100px;  
-    }
+        .item-right {
+            h4 {
+                font-family: $font-banner;
+                font-size: 16px;
+                line-height: 20px;
+            } 
+        }
 
-    .item-right {
-        h4 {
-            font-size: 16px;
-            line-height: 20px;
-        } 
-    }
- } 
- 
- .my-cart-nav{
-    .dropdown-cart{
         .cart-qty{
 
             margin-top: 10px;
@@ -210,21 +213,32 @@
                 }
             }
         }
+
+        li {
+            margin: 0 15px 20px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #efefef;
+
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    } 
+    
+   
+
+    // Cart btn
+    .ann-add-to-cart{
+        background-color:$btngreen;
+        padding: 8px 0px;
+        gap: 8px;
+    border-radius: 8px;
+    color: $text-black;
+    border: none;
+    font-weight: 600;
     }
 }
-
-// Cart btn
-.ann-add-to-cart{
-    background-color:$btngreen;
-    padding: 8px 0px;
-    gap: 8px;
-   border-radius: 8px;
-   color: $text-black;
-   border: none;
-   font-weight: 600;
-}
-
-
   
 
 //===========================================

@@ -8,6 +8,7 @@
     align-self: center;
     text-align: left;
     
+    
     h1 {
       font-family: $font-banner;
       line-height: 60px;
@@ -22,6 +23,17 @@
       font-weight: 600;
     }
   }
+
+  @include mq("md", max) {
+    .right-box {
+      padding: 20px 0;
+      h1 {
+         line-height: 40px;
+         font-size: 35px;
+      }
+    }
+  }
+
 }
 
 .show-rooms {
@@ -30,7 +42,7 @@
   display: flex;
   
   .boxes {
-    width: 50%;
+    width: 100%;
     text-align: center;
 
     figure{
@@ -56,17 +68,17 @@
       }
     }
 
-    .room-list {
-      border-top: 1px solid #909090;
-      width: 50%;
-      margin:0 auto;
-
       ul{
-        padding: 0;
+        padding: 20px 0 20px;
+        border-top: 1px solid #909090;
+        width: 50%;
+        margin:0 auto;
+        
         li{
           list-style: none;
           color: #2DB1FF;
-          font-weight: 500;
+          font-weight: 600;
+          padding: 8px 0;
         }
       }
 
@@ -75,7 +87,7 @@
         padding-left: 40px;
         padding-right: 40px;
       }
-    }
+    
   }
 
 }

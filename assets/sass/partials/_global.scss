@@ -315,15 +315,17 @@ ol[class] {
 }
 
 %headings {
+  font-family: $font-banner;
   font-weight: 700;
   line-height: 1;
   margin-top: 0;
 }
 
-a,a:hover{
-  font-family: $font-default;
-  text-decoration: none;
-  color: $text-black;
+a{
+  &:hover{
+    text-decoration: none;
+    color: $text-black;
+  }
 }
 
 .container{
@@ -351,6 +353,10 @@ a,a:hover{
   .h#{$i} {
     @extend %headings;
   }
+}
+
+hr.dark {
+  border-top: 1px solid #909090;
 }
 
 //=======================================================
@@ -404,4 +410,33 @@ a,a:hover{
 }
 
 
+.progress{
+  height: 12px;
+  border-radius: 20px;
+  
+  .progress-bar {
+    background-color: #009DF9;
+  }
+}
+
+
+
+.fa.heart {
+  font-size: 20px;
+	color: #1E1E1E;
+  font-weight: bold;
+}
+
+.btn-wish {
+  font-weight: 600;
+  color: #1E1E1E;
+}
+
+.btn-wish.red {
+  color: #EE2E2A;
+  font-weight: 600;;
+  .fa.heart {
+    color: #EE2E2A;
+  }
+}
 

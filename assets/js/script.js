@@ -1,6 +1,10 @@
-$(document).ready(function() {
+$(function() {
   // your code
   var window = $(window);
+
+$("#cart").on("click", function() {
+  $(".shopping-cart").fadeToggle( "fast");
+});
 
 $('.btn-minuse').on('click', function(){            
   $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1)
@@ -9,6 +13,29 @@ $('.btn-minuse').on('click', function(){
 $('.btn-pluss').on('click', function(){            
   $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
 })
+
+
+/*$(".btn-wish").click(function() {
+  $('.heart.fa').toggleClass('red');
+  $('.heart.fa').toggleClass("fa-heart fa-heart-o");
+});*/
+
+
+var count = 0;
+$( ".btn-wish" ).each(function() {
+  var $wishbtn = $( this );
+  var count = 0;
+  $wishbtn.click(function() {
+    count++;
+    $wishbtn.toggleClass( "red" );
+    $($wishbtn).children().toggleClass("fa-heart fa-heart-o");
+  });
+});
+
+$('.btn-wish.addfavbtn').click(function(){
+  $('.product-carousel .slick-slide .btn-wish').toggleClass("red");
+  $('.slidefavbtn').children().toggleClass("fa-heart fa-heart-o");
+});
  
 // $(".hero-left").height( $(".hero-right").height() );
 
@@ -39,13 +66,12 @@ $('.recent-product-slider').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
 });
-
 
 // Slcik Slider for Product Category Section
 
@@ -75,7 +101,7 @@ $('.product-cat-outer').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -112,7 +138,7 @@ $('.new-brands-wrapper').slick({
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -122,7 +148,6 @@ $('.new-brands-wrapper').slick({
 });
 
 // Slider Brands For you Section
-
 
 $('.brandforyou-wrapper').slick({
   infinite: true,
@@ -159,9 +184,7 @@ $('.brandforyou-wrapper').slick({
     
 });
 
-
 // Slider Browse collections for more inspiration  Section
-
 
 $('.brows-collect-wrapper').slick({
   infinite: true,
@@ -273,3 +296,50 @@ $(function() {
   });
 
 });
+
+
+$(function() { 
+    $('.product-carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      infinite: false,
+      asNavFor: '.product-carousel-thumbs',
+    });
+    $('.product-carousel-thumbs').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      asNavFor: '.product-carousel',
+      vertical: true,
+      verticalSwiping: true,
+      focusOnSelect: true,
+      infinite: false,
+    });   
+    
+    $(".product-carousel-thumbs .slick-list").height( $(".product-carousel span").height() );
+
+    // Share Button
+
+    $('.favourite-share ul li:last-child a').click(function(){
+      $('#shareBlock').fadeToggle();
+    });
+
+});
+
+
+function readmore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("morebtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Show more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Show less"; 
+    moreText.style.display = "inline";
+  }
+}

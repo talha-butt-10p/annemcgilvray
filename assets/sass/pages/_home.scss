@@ -17,7 +17,7 @@
         .hero-banner-inner {
           position: relative;
           right:auto;
-          padding-right: 20px;
+          padding: 0 20px 0 0;
         }
       }
     }
@@ -46,9 +46,18 @@
         background-color: $whiteclr;
         color: $text-black;
         font-weight: 600;
+        font-size:16px;
         &:hover {
           color: $text-black;
           font-weight: 600;
+          text-decoration: none;
+        }
+      }
+
+      @include mq-only("xs", "sm") {
+        p {
+          font-size: 17px;
+          line-height: 28px;
         }
       }
     }
@@ -81,6 +90,12 @@
       .recent-product-box {
         width: 220px;
         margin: 0px 8px;
+        
+        &:hover {
+          .btn-add-cart {
+            background: #8AC33E;
+          }
+        }
   
         .re-product-thumbnail {
           height: 212px;
@@ -332,6 +347,9 @@
         h3 {
           font-family: $font-banner;
           font-size: 22px;
+          a{
+            font-weight: 600;
+          }
         }
   
         p {
@@ -418,6 +436,16 @@
           p {
             font-size: 16px;
           }
+          
+          @include mq-only("xs", "sm") {
+            h3 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+
         }
       }
     }
@@ -496,6 +524,7 @@
         a {
           color: $orrangeclr;
           text-decoration: underline;
+          font-weight: 600;
         }
       }
       p {

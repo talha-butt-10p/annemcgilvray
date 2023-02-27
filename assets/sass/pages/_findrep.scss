@@ -21,7 +21,7 @@
 
     form {
       position: relative;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
     }
 
@@ -34,10 +34,10 @@
 
     input[type="submit"] {
       position: absolute;
-      top: -1px;
+      top: 0px;
       right: -10px;
       border: 0;
-      padding: 7px 15px;
+      padding: 6px 15px;
       border-radius: 0px 10px 10px 0px;
     }
 
@@ -94,8 +94,12 @@
       position: absolute;
       top: 35px;
       left: 100%;
-      width: 100%;
+      width: 305px;
       margin-left: 20px;
+
+      h1 {
+        font-size:40px;
+      }
 
       @include mq-only("xs", "sm") {
         top:0;
@@ -113,8 +117,11 @@
       h3 {
         background: url(/assets/images/location_on.png) no-repeat;
         background-repeat: no-repeat;
-        padding: 3px 0 0 40px;
+        padding: 3px 0 5px 33px;
         margin-top: 15px;
+        font-size: 22px;
+        background-size: 25px;
+        background-position: 0 1px;
       }
     }
   }

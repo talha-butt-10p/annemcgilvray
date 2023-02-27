@@ -3,10 +3,10 @@
     padding: 75px 0 30px;
     margin-top: 50px;
 
-    @include mq-only("xs", "sm") {
-      font-size: 30px;
+    @include mq-only("xs", "sm") {      
       h1 {
-        line-height: 60px;
+        font-size: 36px;
+        line-height: 40px;
       }
     }
 }
