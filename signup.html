@@ -192,38 +192,310 @@
       <!-- End Of Mobile Header -->
     </header>
      
-    <div class="signuplink">New to Anne McGilvray? <a href="javascript:;">Create an Account</a></div>
+    <section class="signup-process">
     
-    <section class="login-section my-5">
-      <div class="container">
-        
-          <div class="login-form">
-            
-            <h1>Welcome Back!</h1>
-            <p>Thousands of products await.</p>
-            
-            <form>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" name="email" required="">
-              </div>
-              <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" id="pwd" class="form-control" name="pwd" required="">
-              </div>  
-              <div class="mb-3 forgot-link">
-                <a href="javascript:;">Forgot your password?</a>
-              </div>
-              <div class="mb-3">
-                <input type="submit" class="greenbtn" value="Login">
-              </div>
-            </form>
+      <form id="msform">
 
+        <div class="signup-header">
+
+          <div class="heading">
+            <h1>Create an Account</h2>
           </div>
+          
+          <ul id="progressbar">
+              <li id="account" class="active">Your Account</li>
+              <li id="billing" >Billing Information</li>
+              <li id="shipping" >Shipping Information</li>
+          </ul>
+        </div>
+
+        <hr class="signup-border" />
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
         
+                  <fieldset>
+                      <div class="form-card">
+                      <h4>Personal Info</h4>
+                      
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <label>Full name*</label>
+                              <input type="text" class="form-control" placeholder="Sarah Cooper">
+                          </div>
+                          <div class="col-sm-4">
+                              <label>Email Address*</label>
+                              <input type="text" class="form-control" placeholder="SCooper@annemcgilvray.com">
+                          </div>
+                          <div class="col-sm-4">
+                            <label>Phone Number*</label>
+                            <input type="text" class="form-control"  placeholder="+1 234 568 90 12">
+                        </div>
+                      </div>
+
+                      <br /><br />
+                        
+                      <h4>Password</h4>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <p>Your account and contact information is used to login to the site. Please save your password in a safe place</p>
+                        </div>
+                          <div class="col-sm-4">
+                              <label>Password*</label>
+                              <input type="password" class="form-control" >
+                          </div>
+                          <div class="col-sm-4">
+                              <label>Confirm Password*</label>
+                              <input type="password" class="form-control" id="inputLastname">
+                          </div>
+                      </div>
+                      
+                      <br /><br />
+
+                      <h4>Business Details</h4>
+
+                      <div class="row">
+                        <div class="col-sm-4">
+                            <label>Company Name*</label>
+                            <input type="text" class="form-control" placeholder="Anne McGilvray">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Tax ID*</label>
+                            <input type="text" class="form-control" placeholder="12345">
+                        </div>
+                        <div class="col-sm-4">
+                          <label for="inputPhone">Years in Business</label>
+                          <input type="text" class="form-control"  placeholder="2">
+                      </div>
+                    </div>
+                    
+                    <br />
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Website</label>
+                            <input type="text" class="form-control" placeholder="annemcglivray.com">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Owner's Name</label>
+                            <input type="text" class="form-control" placeholder="Sarah Cooper">
+                        </div>
+                        <div class="col-sm-4">
+                          <label>Buyer's Name</label>
+                          <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                          <label>Store Type*</label>
+                          <select class="form-control">
+                            <option selected>Third Party Reseller</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-8">
+                          <label>Primary Category you carry in your store*</label>
+                          <select class="form-control">
+                            <option selected>Gift</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                    </div>
+
+                    </div>
+
+                    <br />
+                    <br />
+                    
+                    <input type="button" name="next" class="next action-button greenbtn float-right" value="Continue"/>
+                    
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="form-card">
+                    
+                    <div class="tab-heading">  
+                        <h4>Billing Information</h4>
+                        <button class="borderbtn">Fill with Account Info</button>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Full name*</label>
+                            <input type="text" class="form-control" placeholder="Sarah Cooper">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Comapny Name*</label>
+                            <input type="text" class="form-control" placeholder="Anne McGilvray">
+                        </div>
+                        <div class="col-sm-4">
+                          <label>Phone Number*</label>
+                          <input type="text" class="form-control"  placeholder="+1 234 568 90 12">
+                      </div>
+                    </div>
+                    
+                    <br />
+                    <br />
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Address Line 1*</label>
+                            <input type="text" class="form-control" placeholder="2332 Valdina">
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Address Line 2 (Opt)</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-4">
+                          <label>City*</label>
+                          <input type="text" class="form-control">
+                      </div>
+                    </div>
+
+                    <br />
+                    <br />
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Country*</label>
+                            <select class="form-control">
+                              <option selected>United States</option>
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>State / Providence*</label>
+                            <select class="form-control">
+                              <option selected>Texas</option>
+                              <option value="">1</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                          <label>Zip Code*</label>
+                          <input type="text" class="form-control" placeholder="75207">
+                      </div>
+                    </div>
+                  
+                  </div>
+
+                  <br />
+                  <br />
+                 
+                  <input type="button" name="next" class="next action-button greenbtn float-right" value="Continue"/>
+                  <input type="button" name="previous" class="previous borderbtn action-button-previous float-right" value="Back"/>
+                 
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="form-card">
+                      
+                    <div class="tab-heading">  
+                      <h4>Shipping Information</h4>
+                      <button class="borderbtn">Fill with Billing Info</button>
+                  </div>
+                  
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <label>Full name*</label>
+                          <input type="text" class="form-control" placeholder="Sarah Cooper">
+                      </div>
+                      <div class="col-sm-4">
+                          <label>Comapny Name*</label>
+                          <input type="text" class="form-control" placeholder="Anne McGilvray">
+                      </div>
+                      <div class="col-sm-4">
+                        <label>Phone Number*</label>
+                        <input type="text" class="form-control"  placeholder="+1 234 568 90 12">
+                    </div>
+                  </div>
+                  
+                  <br />
+                  <br />
+                  
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <label>Address Line 1*</label>
+                          <input type="text" class="form-control" placeholder="2332 Valdina">
+                      </div>
+                      <div class="col-sm-4">
+                          <label>Address Line 2 (Opt)</label>
+                          <input type="text" class="form-control">
+                      </div>
+                      <div class="col-sm-4">
+                        <label>City*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <br />
+                  <br />
+                  
+                  <div class="row">
+                      <div class="col-sm-4">
+                          <label>Country*</label>
+                          <select class="form-control">
+                            <option selected>United States</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4">
+                          <label>State / Providence*</label>
+                          <select class="form-control">
+                            <option selected>Texas</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4">
+                        <label>Zip Code*</label>
+                        <input type="text" class="form-control" placeholder="75207">
+                    </div>
+                  </div>
+              
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <input type="button" name="make_payment" class="action-button greenbtn submit float-right" value="Create Account"/>
+                  <input type="button" name="previous" class="previous borderbtn action-button-previous float-right" value="Back"/>
+                  
+                  </fieldset>
+
+                  
+              </div>
+          </div>
       </div>
+
+
+      </form>
+
+
     </section>
-    
+
+
+
     <section class="bussiness-grow">
       <div class="container">
         <div class="row">

@@ -1,28 +1,19 @@
+.signuplink {
+  text-align: center;
+  background: #FDE7E7;
+  font-size:20px;
+  padding: 15px;
+
+  a{
+    text-decoration: underline;
+  }
+}
+
 .login-section{
-  display: flex;
 
-  .col {
-    padding: 0;
-
-    figure{
-      margin: 0;
-    }
-  }
-
-  @include mq-only("xs", "sm") {
-    .left-box {
-      display: none;
-    }
-  }
-
-  .right-box {
-
-    padding: 20px 0;
-    display: table;
-    background: url(/assets/images/Group-191.png) 0 30px repeat-x, url(/assets/images/Group-191.png) 0 96% repeat-x;
-    
-    .login-form{      
-      padding: 10%;
+    .login-form{   
+      width:40%;
+      margin: 0 auto;
 
       .forgot-link {
         text-align: right;
@@ -34,34 +25,27 @@
         font-weight: bold;
       }
 
-      .signuplink {
-        text-align: center;
-      }
-
       .form-control {
         border-radius: 0;
       }
 
       h1 {
         color: #F5821F;
+        text-align: center;
+      }
+
+      p {
+        text-align:center;
       }
 
       label {
         font-family: $font-default;
       }
+
+      @include mq-only("xs", "sm") {
+        width:80%;
+      }
     }
 
-    .table-cell {
-      display: table-cell;
-      vertical-align: middle;
-      height: 100%;
-      width: 100%;
-    }
-
-    @include mq-only("xs", "sm") {
-      padding: 20% 0;
-    }
-
-  }
 }
 

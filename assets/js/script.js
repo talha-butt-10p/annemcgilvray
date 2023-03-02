@@ -20,6 +20,7 @@ $('.btn-pluss').on('click', function(){
   $('.heart.fa').toggleClass("fa-heart fa-heart-o");
 });*/
 
+$('.recent-product-slider .btn-wish.active img').attr('src', 'assets/images/wishactive.png');
 
 var count = 0;
 $( ".btn-wish" ).each(function() {
@@ -265,6 +266,8 @@ $('.about-slides').slick({
   ]
 });
 
+});
+
 
 //Home Page Page wish btn active
 $(function() {
@@ -276,8 +279,6 @@ $(function() {
      $(this).toggleClass("active");
   });
 });
-
-$('.recent-product-slider .btn-wish.active img').attr('src', 'assets/images/wishactive.png');
 
 $(function() {
   $("#btn.button_btn").on("click", function(e) {
@@ -293,9 +294,9 @@ $(function() {
   $(".sidebar-item").removeClass("active");
   }
   });
-  });
-
 });
+
+
 
 
 $(function() { 
@@ -343,3 +344,76 @@ function readmore() {
     moreText.style.display = "inline";
   }
 }
+
+ 
+
+
+$(function(){
+    
+  var current_fs, next_fs, previous_fs; //fieldsets
+  var opacity;
+  
+  $(".next").on("click", function(){
+      
+      current_fs = $(this).parent();
+      next_fs = $(this).parent().next();
+      
+      //Add Class Active
+      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+      
+      //show the next fieldset
+      next_fs.show(); 
+      //hide the current fieldset with style
+      current_fs.animate({opacity: 0}, {
+          step: function(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+  
+              current_fs.css({
+                  'display': 'none',
+                  'position': 'relative'
+              });
+              next_fs.css({'opacity': opacity});
+          }, 
+          duration: 600
+      });
+  });
+  
+  $(".previous").on("click", function(){
+      
+      current_fs = $(this).parent();
+      previous_fs = $(this).parent().prev();
+      
+      //Remove class active
+      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+      
+      //show the previous fieldset
+      previous_fs.show();
+  
+      //hide the current fieldset with style
+      current_fs.animate({opacity: 0}, {
+          step: function(now) {
+              // for making fielset appear animation
+              opacity = 1 - now;
+  
+              current_fs.css({
+                  'display': 'none',
+                  'position': 'relative'
+              });
+              previous_fs.css({'opacity': opacity});
+          }, 
+          duration: 600
+      });
+  });
+  
+  $('.radio-group .radio').on("click", function(){
+      $(this).parent().find('.radio').removeClass('selected');
+      $(this).addClass('selected');
+  });
+  
+  $(".submit").on("click", function(){
+      return false;
+      //window.location.href = "http://stackoverflow.com";
+  })
+      
+  });

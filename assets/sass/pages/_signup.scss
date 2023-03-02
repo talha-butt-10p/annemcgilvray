@@ -1,0 +1,217 @@
+
+.signup-process {
+  .row {
+      text-align:left;
+      .heading {
+        text-align: center;
+      }
+    }
+  
+    h4 {
+      margin-bottom: 20px;
+    }
+}
+
+.signup-header{
+  background-color: #F5F5F5;
+  padding-bottom: 60px;
+  padding-top: 50px;
+
+  .heading {
+	padding-bottom: 20px;
+	padding-top: 0;
+  }
+
+  .thanks-txt {
+	margin: 0 auto;
+	width: 50%;
+
+	a.greenbtn {
+		font-weight: 500;
+		padding: 10px 30px;
+		margin-top:10px;
+		display: inline-block;
+	}
+  }
+}
+
+.signup-border {
+    background: url(/assets/images/dots-stripe1.png) repeat-x;
+    background-size: 100%;
+    height: 12px;
+    margin: 0;
+    position: relative;
+    top: -6px;
+    border: 0;  
+}
+ 
+#msform {
+	text-align: center;
+	position: relative;
+	
+	fieldset {
+		
+		background: white;
+		border: 0 none;
+		border-radius: 0.5rem;
+		box-sizing: border-box;
+		width: 100%;
+		margin: 0;
+		padding-bottom: 20px;
+		position: relative;
+		&:not(:first-of-type) {
+			display: none;
+		}
+
+		.tab-heading{
+			display: flex;
+			margin-bottom: 30px;
+
+			h4 {
+				flex: 50%;
+			}
+			a {
+				flex-direction: 50%;
+			}
+		}
+	}
+	input {
+		padding: 8px 12px;
+		border-radius: 0;
+	} 
+	select {
+		padding: 8px 12px;
+		border-radius: 0;
+	}
+	.action-button {
+		width: auto;
+		padding: 6px 30px;
+		border-radius: 8px;
+		font-weight: 500;
+		margin-left: 20px;
+	}
+	.action-button-previous {
+		border-radius: 8px;
+    	padding: 4px 25px;
+	}
+}
+
+.card {
+	z-index: 0;
+	border: none;
+	border-radius: 0.5rem;
+	position: relative;
+}
+
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	color: lightgrey;
+	width: 50%;
+	margin: 0 auto;
+
+	.active {
+		color: #000000;
+	}
+	li {
+		list-style-type: none;
+		font-size: 14px;
+		width: 30%;
+		float: left;
+		position: relative;
+		&:before {
+			width: 50px;
+			height: 50px;
+			line-height: 45px;
+			display: block;
+			font-size: 18px;
+			border-radius: 50%;
+			margin: 0 auto 10px auto;
+			padding: 2px;
+			border: 1px solid #1E1E1E;
+			color: #1E1E1E;
+		}
+		&:after {
+			content: '';
+			width: 35%;
+			height: 2px;
+			background: lightgray;
+			position: absolute;
+			left: 82%;
+			top: 25px;
+			z-index: 1;
+		}
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+	}
+	#account {
+		&:before {
+			content: "1";
+		}
+	}
+	#billing {
+		&:before {
+			content: "2";
+		}
+	}
+	#shipping {
+		&:before {
+			content: "3";
+		}
+	}
+	#confirm {
+		&:before {
+			content: "4";
+		}
+	}
+	li.active {
+		&:before {
+			background: #1E1E1E;
+			color: #fff;
+		}
+		&:after {
+			background: #1E1E1E;
+		}
+	}
+}
+.radio-group {
+	position: relative;
+	margin-bottom: 25px;
+}
+.radio {
+	display: inline-block;
+	width: 204;
+	height: 104;
+	border-radius: 0;
+	background: lightblue;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 8px 2px;
+	&:hover {
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	}
+}
+.radio.selected {
+	box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+ 
+.brands-for-you.explore-brands {
+	margin-top: 0;
+	margin-bottom: 0;
+	background: none;
+
+	h2 {
+		color: #1E1E1E;
+	}
+
+	.brandforyou-thumbnail {
+		img{
+			border-radius: 5px 5px 0 0;
+		}
+	}
+}
