@@ -15,8 +15,8 @@
   }
 
   h6{
+    font-family: $font-default;
     color: #B6B6B6;
-    font-weight: normal;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -26,6 +26,7 @@
     .card{
       border:1px solid #DCDCDC;
       padding: 5px;
+      border-radius: 0;
 
       a.borderbtn {
         display: block;
@@ -33,10 +34,98 @@
         float: none;
       }
     }
+
+    .acc-rep-list {
+      ul{
+        height: 200px;
+        padding:0;
+        margin:0;
+        overflow-y: scroll;
+
+        li{
+          list-style: none;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #909090;
+
+          &:last-child{
+            border: 0;
+            margin: 0;
+            padding: 0;
+          }
+
+          h5 {
+            font-family: $font-default;
+            font-size: 20px;
+          }
+
+          p {
+            color: #6A6A6A;
+            margin:0;
+            display:inline-block;
+            width: 100%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+          }
+
+          a{
+            padding: 10px 0 0;
+            display: inline-block;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+  }
+  
   }
 
-  .recent-orders {
-      border:1px solid #DCDCDC;
-      padding: 20px;
+ .recent-orders {
+    border:1px solid #DCDCDC;
+    padding: 20px;
+
+    .recent-list {
+        tr {
+          td {
+            vertical-align: middle;
+            border-top: 0;
+            border-bottom: 1px solid #909090;
+          }
+        }
+      
+
+      h5 {
+        font-family: $font-default;
+        font-size: 16px;
+        color: #B6B6B6;
+        margin: 0;
+      }
+
+      strong {
+        color: #009DF9;
+        font-weight: normal;
+      }
+
+      a.viewdet {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding:0;
+        margin: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          padding: 0 25px;
+        }
+      }
+
+      p {
+        margin: 0;
+      }
     }
   }
+  

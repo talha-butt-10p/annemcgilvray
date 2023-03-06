@@ -280,6 +280,7 @@ a {
   background: none;
   text-transform:capitalize;
   color: #000;
+  font-weight: 500;
 }
 
 .greenbtn {
@@ -290,7 +291,25 @@ a {
   text-transform:capitalize;
   color: #000;
   border: 0;
+  font-weight: 500;
 }
+
+.graybtn {
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 6px 30px;
+  background: #DCDCDC;
+  text-transform:capitalize;
+  color: #909090;
+  border: 0;
+  font-weight: 500;
+
+  &:hover {
+    background: #B9DB8C;
+    color:#000;
+  }
+}
+
 
 .gray-bg {
   background: #E8F3DA;
@@ -321,7 +340,6 @@ ol[class] {
 %headings {
   font-family: $font-banner;
   font-weight: 700;
-  line-height: 1;
   margin-top: 0;
 }
 

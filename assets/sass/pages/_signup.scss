@@ -26,6 +26,14 @@
 	margin: 0 auto;
 	width: 50%;
 
+	@include mq-only("xs", "sm") {
+		width: 90%;
+
+		h3 {
+			line-height: 42px;
+		}
+	}
+
 	a.greenbtn {
 		font-weight: 500;
 		padding: 10px 30px;
@@ -70,10 +78,28 @@
 			h4 {
 				flex: 50%;
 			}
-			a {
-				flex-direction: 50%;
+			button {
+				flex: 50%;
+			}
+
+			@include mq-only("xs", "sm") {
+				display: block;
+
+				button {
+					width: 100%;
+				}
 			}
 		}
+
+		.row {
+			margin-bottom: 10px;
+			
+			@include mq-only("xs", "sm") {
+				margin-bottom: 0px;
+			}
+		}
+
+		
 	}
 	input {
 		padding: 8px 12px;
@@ -176,6 +202,10 @@
 		&:after {
 			background: #1E1E1E;
 		}
+	}
+
+	@include mq-only("xs", "sm") {
+		width:100%;
 	}
 }
 .radio-group {

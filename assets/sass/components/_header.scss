@@ -188,32 +188,6 @@
             } 
         }
 
-        .cart-qty{
-
-            margin-top: 10px;
-
-            .input-group{
-                outline: none;
-                border: 1px solid $cart-input-border;
-                border-radius: 8px;
-                
-                input{
-                    border: none;
-                    outline: none;
-                    padding: 8px;
-                    &:hover, &:focus, &:active{
-                        border: none!important;
-                    outline: none!important;
-                    box-shadow: none;
-                    }
-                }
-                button{
-                    padding: 2px 16px;
-                    font-size: 20px;
-                }
-            }
-        }
-
         li {
             margin: 0 15px 20px;
             padding-bottom: 25px;
@@ -225,8 +199,7 @@
             }
         }
     } 
-    
-   
+
 
     // Cart btn
     .ann-add-to-cart{
@@ -240,6 +213,42 @@
     }
 }
   
+
+.mini-items {
+    .item-left {
+        width: 25%;
+    }
+
+    .item-right {
+        width: 70%;
+    }
+}
+
+.cart-qty{
+
+    margin-top: 10px;
+
+    .input-group{
+        outline: none;
+        border: 1px solid $cart-input-border;
+        border-radius: 8px;
+        
+        input{
+            border: none;
+            outline: none;
+            padding: 8px;
+            &:hover, &:focus, &:active{
+                border: none!important;
+            outline: none!important;
+            box-shadow: none;
+            }
+        }
+        button{
+            padding: 2px 16px;
+            font-size: 20px;
+        }
+    }
+}
 
 //===========================================
 // -Header end

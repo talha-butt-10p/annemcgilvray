@@ -207,7 +207,26 @@
       }
     }
   }
+
+  .orange-bg {
+    background: #F79D50;
+    
+    .recent-product-slider {
+      .recent-product-box {
+        background: #fff;
+        border-radius: 10px;
+      }
+    }
+
+    h2 {
+      color: #fff;
+    }
+  }
   
+  .modal-title{
+    font-family: $font-default;;
+  }
+
   //Product Category Section
   
   section.product-cat {
@@ -380,10 +399,6 @@
   //Brands For you style
   
   section.brands-for-you {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #007dc6;
 
     @include mq("md", max) {
@@ -532,14 +547,10 @@
         margin-bottom: 30px;
       }
     }
-  
-    .instagram-posts {
-    }
   }
   
   //Serch Bnner Section
   .search-banner {
-    margin: 70px auto 0;
     background-image: url(../images/searchBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
