@@ -192,7 +192,7 @@
       <!-- End Of Mobile Header -->
     </header>
      
-    <section class="account-welcome-text border-bottom padding-bottom-30 margin-bottom-30 padding-top-30">
+    <section class="account-welcome-text border-bottom padding-bottom-30 padding-top-30">
       
       <div class="dash-dropdown">
         <div class="container">
@@ -209,161 +209,279 @@
       <h2>Welcome back, Sarah!</h2>
     </section>
 
-    <section class="account-orders">
+    <section class="pfofile-section">
       <div class="container">
         <div class="row">
 
-          <div class="col-md-3">
-
-            <div class="overview-rep">
-              
-              <div class="card margin-bottom-30">
-                <div class="card-body">
-                  <h4>Account Overview</h4>
-                  
-                  <h6>Name</h6>
-                  <p>Sarah Cooper</p>
-
-                  <h6>Company Name</h6>
-                  <p>Anne McGilvray</p>
-
-                  <h6>Email</h6>
-                  <p><a href="">SCooper@annemcgilvray.com</a></p>
-
-                  <a href="javascript:;" class="borderbtn">Edit Profile</a>
-
-                </div>
-              </div>
-
-              <div class="card margin-bottom-30">
-                <div class="card-body">
-                  <h4>My Rep</h4>
-                  
-                  <h6>Name</h6>
-                  <p>Stacey Tredway</p>
-
-                  <h6>Phone Number</h6>
-                  <p>972-322-0447</p>
-
-                  <h6>Email</h6>
-                  <p><a href="">stredway@annemcgilvray.com</a></p>
-
-                  <a href="javascript:;" class="borderbtn">Get in Touch</a>
-
-                </div>
-              </div>
-
-              <div class="card acc-rep-list margin-bottom-30">
-                <div class="card-body">
-                  <h4>My Rep</h4>
-
-                  <ul>
-
-                    <li>
-                      <h5>Stacey Tredway</h5>
-                      <p>Big Mouth, My Mini Cosmo, About ...</p>
-                      <a href="javascript:;">Contact Rep</a>
-                    </li>
-
-                    <li>
-                      <h5>Stacey Tredway</h5>
-                      <p>Big Mouth, My Mini Cosmo, About ...</p>
-                      <a href="javascript:;">Contact Rep</a>
-                    </li>
-
-                    <li>
-                      <h5>Stacey Tredway</h5>
-                      <p>Big Mouth, My Mini Cosmo, About ...</p>
-                      <a href="javascript:;">Contact Rep</a>
-                    </li>
-
-                  </ul>
-
-                </div>
-              </div>
-
-            </div>
-
+          <div class="col-md-2 left-col">
+            
+            <ul id="profile-items">
+              <li><a class="active" href="#edit-profile">Edit My Profile</a></li>
+              <li><a href="#preference">Customer Preferences</a></li>
+              <li><a href="#address-book">Address Book</a></li>
+            </ul>
+            
           </div>
           
-          <div class="col-md-9">
-            <div class="recent-orders">
-              <h4>Recent Orders</h4>
-              
-              <table class="table recent-list">
-                <tbody>
+          <div class="col-md-10 right-col">
+            <div class="profile-desc my-5">
+                
+                <form>
+                    
+                    <fieldset id="edit-profile">
+                        <div class="form-card">
 
-                  <tr>
-                    <td>
-                      <h5>Brand</h5>
-                      <strong>About Face Designs</strong>
-                    </td>
-                    <td>
-                      <ul>
-                        <li>
-                          <h5>Order Number</h5>
-                          <p>AMCI-65362</p>
-                        </li>
-                        <li>
-                          <h5>Order Placed</h5>
-                          <p>Dec 5, 2022</p>
-                        </li>
-                      </ul>
-                    </td>
-                    <td class="viewlink"><a class="viewdet" href="javascript:;">View Details</a></td>
-                    <td class="reorder"><button class="borderbtn">Reorder</button></td>
-                  </tr>
+                        <h3>Edit My Profile</h3>  
+                        <h4>Personal Info</h4>
+                        
+                        <div class="row">
+                            <div class="col-sm-4 my-2">
+                                <label>Full name*</label>
+                                <input type="text" class="form-control" placeholder="Sarah Cooper">
+                            </div>
+                            <div class="col-sm-4 my-2">
+                                <label>Email Address*</label>
+                                <input type="text" class="form-control" placeholder="SCooper@annemcgilvray.com">
+                            </div>
+                            <div class="col-sm-4 my-2">
+                              <label>Phone Number*</label>
+                              <input type="text" class="form-control"  placeholder="+1 234 568 90 12">
+                          </div>
+                        </div>
 
-                  <tr>
-                    <td>
-                      <h5>Brand</h5>
-                      <strong>About Face Designs</strong>
-                    </td>
-                    <td>
-                      <ul>
-                        <li>
-                          <h5>Order Number</h5>
-                          <p>AMCI-65362</p>
-                        </li>
-                        <li>
-                          <h5>Order Placed</h5>
-                          <p>Dec 5, 2022</p>
-                        </li>
-                      </ul>
-                    </td>
-                    <td class="viewlink"><a class="viewdet" href="javascript:;">View Details</a></td>
-                    <td class="reorder"><button class="borderbtn">Reorder</button></td>
-                  </tr>
+                        <br />
 
-                  <tr>
-                    <td>
-                      <h5>Brand</h5>
-                      <strong>About Face Designs</strong>
-                    </td>
-                    <td>
-                      <ul>
-                        <li>
-                          <h5>Order Number</h5>
-                          <p>AMCI-65362</p>
-                        </li>
-                        <li>
-                          <h5>Order Placed</h5>
-                          <p>Dec 5, 2022</p>
-                        </li>
-                      </ul>
-                    </td>
-                    <td class="viewlink"><a class="viewdet" href="javascript:;">View Details</a></td>
-                    <td class="reorder"><button class="borderbtn">Reorder</button></td>
-                  </tr>
+                        <h4>Business Details</h4>
+                        <div class="row">
+                          <div class="col-sm-4 my-2">
+                              <label>Company Name*</label>
+                              <input type="text" class="form-control" placeholder="Anne McGilvray">
+                          </div>
+                          <div class="col-sm-4 my-2">
+                              <label>Tax ID*</label>
+                              <input type="text" class="form-control" placeholder="12345">
+                          </div>
+                          <div class="col-sm-4 my-2">
+                            <label for="inputPhone">Years in Business</label>
+                            <input type="text" class="form-control"  placeholder="2">
+                        </div>
+                        <div class="col-sm-4 my-2">
+                              <label>Website</label>
+                              <input type="text" class="form-control" placeholder="annemcglivray.com">
+                          </div>
+                          <div class="col-sm-4 my-2">
+                              <label>Owner's Name</label>
+                              <input type="text" class="form-control" placeholder="Sarah Cooper">
+                          </div>
+                          <div class="col-sm-4 my-2">
+                            <label for="inputPhone">Buyer's Name</label>
+                            <input type="text" class="form-control"  placeholder="">
+                        </div>
+                        </div>
 
-                </tbody>
-              </table>
+                      <br />
 
-              <div class="d-flex justify-content-center align-content-center view-order-btn">
-                <button class="greenbtn ">View Order History</button>
-              </div>
+                        <h4>Password</h4>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <p>Your account and contact information is used to login to the site. Please save your password in a safe place</p>
+                          </div>
+                            <div class="col-sm-4 my-2">
+                                <label>Old Password</label>
+                                <input type="password" class="form-control" >
+                            </div>
+                            <div class="col-sm-4 my-2">
+                                <label>New Password</label>
+                                <input type="password" class="form-control" id="inputLastname">
+                            </div>
+                            <div class="col-sm-4 my-2">
+                              <label>Confirm Password</label>
+                              <input type="password" class="form-control" id="inputLastname">
+                          </div>
+                        </div>
+                        
+                      </div>
+                      
+                      <input type="button" name="next" class="greenbtn float-left" value="Save Profile"/>
+                      
+                    </fieldset>
+
+                    <br class="clear" />
+
+                    <fieldset id="preference">
+                      <div class="form-card">
+                      
+                      <h3>Customer Preferences</h3>
+                      <h4>Business Overview</h4>
+
+                      <div class="row">
+                          <div class="col-sm-4 my-2">
+                              <label>Store Type*</label>
+                              <select class="form-control">
+                                <option selected>Third Party Reseller</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                              </select>
+                          </div>
+                          <div class="col-sm-8 my-2">
+                              <label>Primary Category you carry in your store*</label>
+                              <select class="form-control">
+                                <option selected>Gift</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                              </select>
+                          </div>
+                      </div>
+
+                      <br class="clear" />
+
+                      <h4>Shopping Mode</h4>
+
+                      <div class="row shopping-mode">
+                        <div class="col-sm-4 my-2">
+                          <label><input type="radio" name="mode" value="3-up" /> 3-up</label>
+                          <label><input type="radio" name="mode" value="4-up" /> 4-up</label>
+                          <label><input type="radio" name="mode" value="Speed Shop" /> Speed Shop</label>
+                        </div>
+                      </div>
+
+                      <br class="clear" />
+                        <h4>Default Payment Type</h4>
+                      
+                      <div class="row">
+                        <div class="col-sm-4 my-2">
+                          <select class="form-control">
+                            <option selected>Third Party Reseller</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                        </div>
+
+                        <div class="col-sm-4 my-2">&nbsp;</div>
+                        <div class="col-sm-4 my-2">&nbsp;</div>
+                      </div>
+
+                      </div>
+
+                    <input type="button" class="greenbtn float-left" value="Save"/>
+                    
+                    </fieldset>
+
+                    <br class="clear" />
+
+                    <fieldset id="address-book">
+                      <div class="form-card">
+                      
+                      <h3>Address Book</h3>
+                      <h4>Shipping Address</h4>
+                      
+                      <div class="book-detail my-4">
+                        
+                        <div class="row">
+                        
+                          <div class="col-sm-6">
+                            <div class="left-area">
+                              <h5>Sarah Cooper</h5>
+                              <ul>
+                                <li>Anne McGilvray</li>
+                                <li>3443 Valdina <br />
+                                  Dallas, Texas 86318</li>
+                                <li>United States</li>
+                                <li>8005271462</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="right-area">
+                              <ul>
+                                <li class="default"><a href="">Default</a></li>
+                                <li><a href="">Edit</a></li>
+                              </ul>
+                            </div>
+                          </div> 
+
+                        </div>
+
+                      </div>
+
+                      <div class="book-detail my-4">
+                        
+                        <div class="row">
+                        
+                          <div class="col-sm-6">
+                            <div class="left-area">
+                              <h5>Sarah Cooper</h5>
+                              <ul>
+                                <li>Anne McGilvray</li>
+                                <li>3443 Valdina <br />
+                                  Dallas, Texas 86318</li>
+                                <li>United States</li>
+                                <li>8005271462</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="right-area">
+                              <ul>
+                                <li><a href="">Make Default</a></li>
+                                <li><a href="">Edit</a></li>
+                              </ul>
+                            </div>
+                          </div> 
+
+                        </div>
+
+                      </div>
+
+                      <br />
+
+                      <h4>Billing Address</h4>
+                      
+                      <div class="book-detail my-4">
+                        
+                        <div class="row">
+                        
+                          <div class="col-sm-6">
+                            <div class="left-area">
+                              <h5>Sarah Cooper</h5>
+                              <ul>
+                                <li>Anne McGilvray</li>
+                                <li>3443 Valdina <br />
+                                  Dallas, Texas 86318</li>
+                                <li>United States</li>
+                                <li>8005271462</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="right-area">
+                              <ul>
+                                <li class="default"><a href="">Default</a></li>
+                                <li><a href="">Edit</a></li>
+                              </ul>
+                            </div>
+                          </div> 
+
+                        </div>
+
+                      </div>
+                      
+                      </div>
+
+                    <input type="button" class="greenbtn float-left" value="Add Another Address"/>
+                    
+                    </fieldset>
+
+                </form>
 
             </div>
+
           </div>
 
         </div>

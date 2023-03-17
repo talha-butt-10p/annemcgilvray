@@ -311,6 +311,17 @@ a {
 }
 
 
+.darkgraybtn {
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 6px 30px;
+  background: #6A6A6A;
+  text-transform:capitalize;
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+}
+
 .gray-bg {
   background: #E8F3DA;
 }
@@ -339,7 +350,7 @@ ol[class] {
 
 %headings {
   font-family: $font-banner;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0;
 }
 

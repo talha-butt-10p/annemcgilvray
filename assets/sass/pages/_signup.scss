@@ -78,10 +78,7 @@
 			h4 {
 				flex: 50%;
 			}
-			button {
-				flex: 50%;
-			}
-
+			 
 			@include mq-only("xs", "sm") {
 				display: block;
 

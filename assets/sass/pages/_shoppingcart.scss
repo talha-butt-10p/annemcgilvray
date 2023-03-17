@@ -33,6 +33,10 @@
         &:last-child {
           float: right;
         }
+
+        .fa-check-circle-o {
+          font-size: 20px;
+        }
       }
     }
 
@@ -106,12 +110,167 @@
         margin:0;
       }
     }
-
   }
+
+  .discount-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+  }
+
+  .order-summary {
+    padding: 15px;
+    border: 1px solid #ccc;
+
+    h4 {
+      color: #F5821F;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      font-family: $font-default;
+    }
+
+    ul{
+      display: flex;
+      padding-bottom: 10px;
+      li{
+        flex: 50%;
+        &:last-child {
+          text-align:center;
+        }
+      }
+    }
+
+    .brand-total {
+      border-top: 1px solid #1e1e1e;
+      margin-top: 10px;
+      padding-top: 15px;
+      
+      strong {
+        font-size: 20px;
+      }
+ 
+    } 
+    .shipping-txt {
+      .dull {
+          text-align: center;
+          columns: #B6B6B6;
+          font-size: 14px;
+      }
+
+    }
+    
+  }
+
+  .delete-all {
+    text-align: center;
+    border-top: 1px solid #DCDCDC;
+    a{
+      text-decoration: underline;
+      padding: 5px 0;
+      margin: 5px 0;
+      display: inline-block;
+    }
+  }
+
+  .keep-shop {
+    margin: 0 20px 20px;
+  }
+
 }
 
 .myshop-cards:last-child {
   border: 0;
   border-radius: 0;
   margin-bottom: 30px;
+}
+
+.brandp-listing {
+  border: 1px solid #DCDCDC;
+  
+  .added-items {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #DCDCDC;
+
+    h5 {
+      font-family: $font-default;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    figure {
+      margin: 30px 0;
+      text-align:center;
+      img {
+        width: 112px;
+        height: 112px;
+        border: 1px solid #DCDCDC;
+        display: inline-block;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        flex: 50%;
+
+        &:last-child {
+          text-align: right;
+        }
+
+        .cart-qty {
+          margin-top: 5px;
+        }
+
+        .dull {
+          color: #909090;
+          font-size: 14px;
+        }
+        
+        .total {
+          font-size: 16px;
+        }
+
+        .min-qty {
+          font-size: 14px;
+        }
+
+        .fa-trash-o {
+          font-size: 16px;
+        }
+      }
+
+    }
+  }
+}
+
+
+.checkout-boxes {
+  border: 1px solid #DCDCDC;
+
+  h4 {
+    background-color: #F5F5F5;
+    font-size: 22px;
+    padding: 10px 15px;
+  }
+
+  .inner-box {
+    padding: 15px 5%;
+
+    input.error-outline {
+      background: url(/assets/images/error_outline.png);
+      background-position: 99% 55%;
+      background-repeat: no-repeat;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  }
+
+
 }

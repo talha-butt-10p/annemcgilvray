@@ -171,7 +171,7 @@
     .shopping-cart-items {
         min-width: 430px;
         display: -ms-flexbox;
-        padding: 20px;
+        padding: 20px 5px;
         max-height: 165px;
         overflow-y: scroll;
         
@@ -189,15 +189,69 @@
         }
 
         li {
-            margin: 0 15px 20px;
-            padding-bottom: 25px;
+            margin: 0 15px 15px;
             border-bottom: 1px solid #efefef;
+            display: flex;
+            padding-bottom: 15px;
 
             &:last-child {
                 border-bottom: 0;
                 padding-bottom: 0;
             }
+
+            div {
+                flex: 50%;
+                text-align:left;
+                font-size: 14px;
+                
+                h4, h5, h6 {
+                    font-family: $font-default;
+                }
+
+                h5 {
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding-top: 15px;
+                    margin: 0;
+                }
+
+                h6 {
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                }
+                
+                &:last-child{
+                    text-align: right;    
+                }
+
+                p {
+                    color: #909090;
+                    font-size:14px;
+                    margin: 0;
+                }
+            }
         }
+
+        li.head-title {
+            padding-bottom: 10px;
+            div {
+                &:first-child {
+                    flex: 90%;
+                }
+
+                &:last-child {
+                    flex: 10%;
+                }
+            }
+            
+            a {
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+
+
     } 
 
 
@@ -247,6 +301,25 @@
             padding: 2px 16px;
             font-size: 20px;
         }
+    }
+}
+
+
+.dropdown-menu.acc-dropdown-list {
+    text-align: left;
+    li {
+        display: block;
+        a{
+            font-weight: normal;
+            font-size: 14px;
+            border-bottom: 1px solid #DCDCDC;
+            padding: 5px 0;
+        }
+    &:last-child {
+        a{ 
+            border-bottom: 0;
+        }
+    }    
     }
 }
 

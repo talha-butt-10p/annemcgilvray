@@ -59,7 +59,7 @@
                               <img src="assets/images/Image.png" width="100" height="100" alt="" />
                             </span>
                             <span class=" text-left pl-3 w-75 item-right">
-                              <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                              <h5>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h5>
                               <span>Min Qty: 3</span>
                               <span class="cart-qty d-flex">
                                 <div class="input-group" style="width:50%">
@@ -121,7 +121,7 @@
                           <img src="assets/images/Image.png" width="100" height="100" alt="" />
                         </span>
                         <span class=" text-left pl-3 w-75 item-right">
-                          <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                          <h5>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h5>
                           <span>Min Qty: 3</span>
                           <span class="cart-qty d-flex">
                             <div class="input-group" style="width:50%">
@@ -192,127 +192,141 @@
       <!-- End Of Mobile Header -->
     </header>
      
-    <section class="category-banner padding-top-30 padding-bottom-30">
-      <div class="container">
-        <div class="row align-middle">
-          <div class="col-md-4">
-              <h1>New Brands to <br />Explore!</h1>
-              <a class="btn" href="javascript:;">Shop Now</a>
-          </div>
-          <div class="col-md-8">
-            <figure>
-              <img src="/assets/images/category-banner.png" />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="signup-process">
     
-    <section class="cats-listing margin-top-40 margin-bottom-40">
+      <form id="msform">
+
+        <div class="signup-header">
+
+          <div class="heading">
+            <h1>Create an Account</h2>
+          </div>
+          
+          <ul id="progressbar">
+              <li id="account" class="active">Your Account</li>
+              <li id="billing" class="active">Billing Information</li>
+              <li id="shipping" class="active">Shipping Information</li>
+          </ul>
+        </div>
+
+        <hr class="signup-border" />
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+        
+                  <fieldset style="display: block; opacity: 1;">
+                    <div class="form-card">
+                      
+                    <div class="tab-heading">  
+                      <h4>Shipping Information</h4>
+                      <button class="borderbtn">Fill with Billing Info</button>
+                  </div>
+                  
+                  <div class="row">
+                      <div class="col-sm-4 my-2">
+                          <label>Full name*</label>
+                          <input type="text" class="form-control" placeholder="Sarah Cooper">
+                      </div>
+                      <div class="col-sm-4 my-2">
+                          <label>Comapny Name*</label>
+                          <input type="text" class="form-control" placeholder="Anne McGilvray">
+                      </div>
+                      <div class="col-sm-4 my-2">
+                        <label>Phone Number*</label>
+                        <input type="text" class="form-control"  placeholder="+1 234 568 90 12">
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                      <div class="col-sm-4 my-2">
+                          <label>Address Line 1*</label>
+                          <input type="text" class="form-control" placeholder="2332 Valdina">
+                      </div>
+                      <div class="col-sm-4 my-2">
+                          <label>Address Line 2 (Opt)</label>
+                          <input type="text" class="form-control">
+                      </div>
+                      <div class="col-sm-4 my-2">
+                        <label>City*</label>
+                        <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-sm-4 my-2">
+                          <label>Country*</label>
+                          <select class="form-control">
+                            <option selected>United States</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4 my-2">
+                          <label>State / Providence*</label>
+                          <select class="form-control">
+                            <option selected>Texas</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4 my-2">
+                        <label>Zip Code*</label>
+                        <input type="text" class="form-control" placeholder="75207">
+                    </div>
+                  </div>
+              
+                  </div>
+
+                  <br />
+                  <br />
+
+                  <input type="button" name="create-account" onclick="signupthanks()" class="action-button greenbtn submit float-right" value="Create Account"/>
+                  <input type="button" name="previous" class="previous borderbtn action-button-previous float-right" value="Back"/>
+                  
+                  </fieldset>
+
+                  
+              </div>
+          </div>
+      </div>
+
+
+      </form>
+
+
+    </section>
+
+    <section class="bussiness-grow">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <figure>
-              <a href="categories-details.html">
-                <img src="/assets/images/cat1.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-5">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat2.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-4">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat3.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-8">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat4.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-7">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat5.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-5">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat6.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-7">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat7.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-5">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat8.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-          <div class="col-md-4">
-            <figure>
-              <a href="javascript:;">
-                <img src="/assets/images/cat9.png" class="img-fluid"/>
-                <figcaption>Apparel</figcaption>
-              </a>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="search-banner pt-5 pb-5 no-margin">
-      <div class="container">
-        <div class="search-banner-wrapper">
-          <div class="trending-searcch-box">
-            <p>With over 100 brands and more than 1 million products,<br> 
-              <strong>we are your one-stop wholesale shop!</strong></p>
-              <div class="form-group has-search">
-                <input type="text" class="form-control" placeholder="Search for the things you love...we´ve got them">
+          <div class="col-md-6">
+            <div class="align-items-center d-flex justify-content-center left-avatar-content">
+              <div class="avatar-md">
+                <img src="assets/images/anne-avatar.png" alt="Avatar">
+              </div>
+              <h2>We’re here to grow <br> your business!</h2>
             </div>
           </div>
-          <div class="trending-tags">
-            <h2>Trending now:</h2>
-            <ul>
-              <li><a href="#">Candles</a></li>
-              <li><a href="#">Jewelry</a></li>
-              <li><a href="#">Christmas Decor</a></li>
-              <li><a href="#">Denim Jacket</a></li>
-              <li><a href="#">Sweat Shirt</a></li>
-              <li><a href="#">Vase</a></li>
-            </ul>
-            <a class="see-all-cta" href="#">See all trending items</a>
+          <div class="col-md-6">
+            <div class="d-flex h-100 para-content align-items-center">
+              <p>Since 1975, we have been a one-stop shop for our vendors, selling to every type of retailer via our team of professional sales and representatives covering fifty states, four beautiful showrooms and 24/7 online marketplace.</p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="topcolors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </section>
-    
+
     <footer>
       <div class="container">
         <div class="row">
@@ -373,6 +387,5 @@
 
     <script src="assets/dist/main.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    
   </body>
 </html>

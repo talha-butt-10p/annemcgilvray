@@ -1,313 +1,323 @@
-$(function() {
+var $jQ = jQuery.noConflict();
+
+$jQ(function() {
+
   // your code
-  var window = $(window);
+  var window = $jQ(window);
 
-$("#cart").on("click", function() {
-  $(".shopping-cart").fadeToggle( "fast");
-});
-
-$('.btn-minuse').on('click', function(){            
-  $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1)
-})
-
-$('.btn-pluss').on('click', function(){            
-  $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
-})
-
-
-/*$(".btn-wish").click(function() {
-  $('.heart.fa').toggleClass('red');
-  $('.heart.fa').toggleClass("fa-heart fa-heart-o");
-});*/
-
-$('.recent-product-slider .btn-wish.active img').attr('src', 'assets/images/wishactive.png');
-
-var count = 0;
-$( ".btn-wish" ).each(function() {
-  var $wishbtn = $( this );
-  var count = 0;
-  $wishbtn.click(function() {
-    count++;
-    $wishbtn.toggleClass( "red" );
-    $($wishbtn).children().toggleClass("fa-heart fa-heart-o");
+  $jQ("#cart").on("click", function() {
+    $jQ(".shopping-cart").fadeToggle( "fast");
   });
-});
 
-$('.btn-wish.addfavbtn').click(function(){
-  $('.product-carousel .slick-slide .btn-wish').toggleClass("red");
-  $('.slidefavbtn').children().toggleClass("fa-heart fa-heart-o");
-});
+  $jQ('.btn-minuse').on('click', function(){            
+    $jQ(this).parent().siblings('input').val(parseInt($jQ(this).parent().siblings('input').val()) - 1)
+  });
+
+  $jQ('.btn-pluss').on('click', function(){            
+    $jQ(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
+  });
+
+  /*$(".btn-wish").click(function() {
+    $('.heart.fa').toggleClass('red');
+    $('.heart.fa').toggleClass("fa-heart fa-heart-o");
+  });*/
+
+  $jQ('#profile-items a[href^="#"]').on('click', function(){
+    $jQ(this).addClass('active');
+    $jQ(this).parent().siblings().find('a').removeClass('active');
+
+    var the_id = $(this).attr("href");
+    if (the_id === '#') {
+      return;
+    }  
+  });
+
+  $jQ('.recent-product-slider .btn-wish.active img').attr('src', 'assets/images/wishactive.png');
+
+  var count = 0;
+  $jQ( ".btn-wish" ).each(function() {
+    var $wishbtn = $jQ( this );
+    var count = 0;
+    $wishbtn.on('click', function() {
+      count++;
+      $wishbtn.toggleClass( "red" );
+      $jQ($wishbtn).children().toggleClass("fa-heart fa-heart-o");
+    });
+  });
+
+  $jQ('.btn-wish.addfavbtn').on('click', function(){
+    $jQ('.product-carousel .slick-slide .btn-wish').toggleClass("red");
+    $jQ('.slidefavbtn').children().toggleClass("fa-heart fa-heart-o");
+  });
  
 // $(".hero-left").height( $(".hero-right").height() );
 
 //Home Page Recent View Slider
-$('.recent-product-slider').slick({
-  infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 1,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          
+  $jQ('.recent-product-slider').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-});
+      ]
+  });
 
 // Slcik Slider for Product Category Section
 
-$('.product-cat-outer').slick({
-  infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 1,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          
+  $jQ('.product-cat-outer').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+        
+      ]
       
-    ]
-    
-});
+  });
 
 // New Brands Slider
 
-$('.new-brands-wrapper').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          
+  $jQ('.new-brands-wrapper').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+        
+      ]
       
-    ]
-    
-});
+  });
 
 // Slider Brands For you Section
 
-$('.brandforyou-wrapper').slick({
-  infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 1,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          
+  $jQ('.brandforyou-wrapper').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
+        
+      ]
       
-    ]
-    
-});
+  });
 
 // Slider Browse collections for more inspiration  Section
 
-$('.brows-collect-wrapper').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-    dots: false,
-    prevArrow: false,
-    nextArrow: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          
+  $jQ('.brows-collect-wrapper').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+        
+      ]
       
-    ]
-    
-});
+  });
 
 // Career Page Carousal
 
-$('.career-slides').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  adaptiveHeight: true,
-  dots: false,
-  arrows:true,
-  centerMode: true,
-  centerPadding: '60px',
-  responsive: [
-      {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-      }
-  ]
-});
+  $jQ('.career-slides').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    dots: false,
+    arrows:true,
+    centerMode: true,
+    centerPadding: '60px',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+  });
 
 // About page carousal
 
-$('.about-slides').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  adaptiveHeight: true,
-  dots: false,
-  arrows:true,
-  centerMode: true,
-  centerPadding: '60px',
-  responsive: [
-      {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-      }
-  ]
-});
+  $jQ('.about-slides').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    dots: false,
+    arrows:true,
+    centerMode: true,
+    centerPadding: '60px',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+  });
+
+  var height = Math.max($jQ(".left-col").height(), $jQ(".right-col").height());
+  $jQ(".left-col").height(height);
+  $jQ(".right-col").height(height);
 
 });
 
 
 //Home Page Page wish btn active
-$(function() {
-  $(".recent-product-slider .btn-wish").click(function() {
-     // remove classes from all
-    //  $(this).toggleClass("active");
-    //  $(".recent-product-slider .btn-wish").removeClass("active");
-     // add class to the one we clicked
-     $(this).toggleClass("active");
+$jQ(function() {
+  $jQ(".recent-product-slider .btn-wish").on('click', function() {
+     $jQ(this).toggleClass("active");
   });
 });
 
-$(function() {
-  $("#btn.button_btn").on("click", function(e) {
-  $(".button_btn").toggleClass("active");
-  $(".sidebar-item").toggleClass("active");
-  $(".sidebar").toggleClass("side-bg animated fadeInRight");
-  $("html").toggleClass("html-y");
+$jQ(function() {
+  $jQ("#btn.button_btn").on("click", function(e) {
+    $jQ(".button_btn").toggleClass("active");
+    $jQ(".sidebar-item").toggleClass("active");
+    $jQ(".sidebar").toggleClass("side-bg animated fadeInRight");
+    $jQ("html").toggleClass("html-y");
   });
-  $(".sidebar-item").on("click", function(e) {
-  if ($(e.target).is("#btn.button_btn, .sidebar") === false) {
-  $(".sidebar").removeClass("side-bg animated fadeInRight");
-  $("#btn.button_btn").removeClass("active");
-  $(".sidebar-item").removeClass("active");
+
+  $jQ(".sidebar-item").on("click", function(e) {
+  if ($jQ(e.target).is("#btn.button_btn, .sidebar") === false) {
+    $jQ(".sidebar").removeClass("side-bg animated fadeInRight");
+    $jQ("#btn.button_btn").removeClass("active");
+    $jQ(".sidebar-item").removeClass("active");
   }
   });
 });
 
-
-
-
-$(function() { 
-    $('.product-carousel').slick({
+$jQ(function() { 
+    $jQ('.product-carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       infinite: false,
       asNavFor: '.product-carousel-thumbs',
     });
-    $('.product-carousel-thumbs').slick({
+    $jQ('.product-carousel-thumbs').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
@@ -318,12 +328,12 @@ $(function() {
       infinite: false,
     });   
     
-    $(".product-carousel-thumbs .slick-list").height( $(".product-carousel span").height() );
+    $jQ(".product-carousel-thumbs .slick-list").height( $jQ(".product-carousel span").height() );
 
     // Share Button
 
-    $('.favourite-share ul li:last-child a').click(function(){
-      $('#shareBlock').fadeToggle();
+    $jQ('.favourite-share ul li:last-child a').on('click', function(){
+      $jQ('#shareBlock').fadeToggle();
     });
 
 });
@@ -345,21 +355,18 @@ function readmore() {
   }
 }
 
- 
-
-
-$(function(){
+$jQ(function(){
     
   var current_fs, next_fs, previous_fs; //fieldsets
   var opacity;
   
-  $(".next").on("click", function(){
+  $jQ(".next").on("click", function(){
       
-      current_fs = $(this).parent();
-      next_fs = $(this).parent().next();
+      current_fs = $jQ(this).parent();
+      next_fs = $jQ(this).parent().next();
       
       //Add Class Active
-      $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+      $jQ("#progressbar li").eq($jQ("fieldset").index(next_fs)).addClass("active");
       
       //show the next fieldset
       next_fs.show(); 
@@ -379,13 +386,13 @@ $(function(){
       });
   });
   
-  $(".previous").on("click", function(){
+  $jQ(".previous").on("click", function(){
       
-      current_fs = $(this).parent();
-      previous_fs = $(this).parent().prev();
+      current_fs = $jQ(this).parent();
+      previous_fs = $jQ(this).parent().prev();
       
       //Remove class active
-      $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+      $jQ("#progressbar li").eq($jQ("fieldset").index(current_fs)).removeClass("active");
       
       //show the previous fieldset
       previous_fs.show();
@@ -406,14 +413,21 @@ $(function(){
       });
   });
   
-  $('.radio-group .radio').on("click", function(){
-      $(this).parent().find('.radio').removeClass('selected');
-      $(this).addClass('selected');
+  $jQ('.radio-group .radio').on("click", function(){
+    $jQ(this).parent().find('.radio').removeClass('selected');
+    $jQ(this).addClass('selected');
   });
   
-  $(".submit").on("click", function(){
+  $jQ(".submit").on("click", function(){
       return false;
       //window.location.href = "http://stackoverflow.com";
-  })
-      
   });
+
+  $jQ('.datepicker1, .datepicker2').datepicker({format: 'mm-dd-yyyy'});
+
+  });
+
+
+  function signupthanks() {
+    window.location.assign("http://localhost:3000/signup-thanks.html")
+  }
