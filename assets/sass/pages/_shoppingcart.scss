@@ -20,6 +20,7 @@
       display: inline-block;
       margin-bottom: 30px;
     }
+
   }
 
   .order-min {
@@ -193,6 +194,19 @@
     border-radius: 0;
     border-bottom: 1px solid #DCDCDC;
 
+    @include mq-only("xs", "sm") {
+      .card-body {
+        padding-right: 10px;
+      }
+      .col-sm-2 {
+        width: 35%;
+      }
+
+      .col-sm-10 {
+        width:65%;
+      }
+    }
+
     h5 {
       font-family: $font-default;
     }
@@ -220,6 +234,7 @@
 
         &:last-child {
           text-align: right;
+          padding-top: 20px;
         }
 
         .cart-qty {
@@ -245,6 +260,48 @@
       }
 
     }
+
+    .qlist-detail {
+      li {
+        &:first-child {
+          flex: 87%;
+        }    
+      }
+    }
+
+  }
+
+  .qlist-item {
+    .for-mobile {
+      display: none;
+    }
+
+    @include mq-only("xs", "sm") {
+      .for-desktop {
+        display: none;
+      }
+
+      .qlist-card-items.for-mobile {
+        display: flex;
+        li{
+          &:first-child{
+            flex: 40%;
+          }
+          &:last-child {
+            width: 60%;
+          }
+        }
+      }
+
+    }
+
+    .input-group {
+      width:40%;
+      @include mq-only("xs", "sm") {
+        width: 100%;
+      }
+    }
+
   }
 }
 

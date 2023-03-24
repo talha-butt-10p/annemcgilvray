@@ -16,6 +16,12 @@
  
  .heading {
   text-align: left;
+  overflow: hidden;
+  padding-bottom: 10px;
+
+  @include mq-only("xs", "sm") {
+    padding-left: 0;
+  }
 
   h2 {
     color: #007DC6;
@@ -27,10 +33,23 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    @include mq-only("xs", "sm") {
+      float:left;
+    }
     li {
       display: inline-block;
       margin-left: 10px;
       margin-top: 10px;
+      @include mq-only("xs", "sm") {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+
+      a {
+        width: 150px;
+        display: inline-block;
+        text-align: center;
+      }
     }
   }
 
@@ -234,12 +253,41 @@
 .pfofile-section {
   .left-col {
     border-right: 1px solid #DCDCDC;
+    @include mq-only("xs", "sm") {
+      display: none;
+    }
   }
 
   .profile-desc{
     padding-left: 30px;
+    @include mq-only("xs", "sm") {
+      padding-left: 0;
+    }
   }
 }
+
+.empty-element {
+  @include mq-only("xs", "sm") {
+    display: none;
+  }
+}
+
+.search-by-sku {
+  width: 40%;
+  margin:0 auto;
+  @include mq-only("xs", "sm") {
+    width: 100%;
+  }
+}
+
+.mid-container {
+  width: 60%;
+  margin:0 auto;
+  @include mq-only("xs", "sm") {
+    width: 100%;
+  }
+}
+
 
   #profile-items {
     margin: 0;
@@ -281,6 +329,10 @@
     input[type="button"] {
       width:250px;
       margin: 15px 0;
+      @include mq-only("xs", "sm") {
+        width:100%;
+        padding: 10px;
+      }
     }
 
     #preference{
@@ -302,6 +354,10 @@
     padding: 20px;
     width:60%;
 
+    @include mq-only("xs", "sm") {
+      width:100%;
+    }
+
     h5 {
       font-family: $font-default;
       font-weight: bold;
@@ -317,6 +373,9 @@
       width: 100%;
       height: 100%;
       display: table;
+      @include mq-only("xs", "sm") {
+        padding-top:10px;
+      }
       ul {
         display: table-cell;
         vertical-align: middle;
@@ -336,6 +395,129 @@
     }
   }
 
+  .order-details {
+
+    ul{
+      padding: 0;
+      
+      li{
+        list-style: none;
+      }
+    }
+
+    .left-box{
+      border:1px solid #B6B6B6;
+      padding: 20px;
+
+      h4 {
+        color: #009DF9;
+      }
+
+      li {
+        padding: 5px 0;
+      }
+    }
+
+    .right-box{
+      border:1px solid #B6B6B6;
+      padding: 20px;
+
+      h4 {
+        color: #B6B6B6;
+        font-weight: 600;
+      }
+
+      .addresses {
+        display: flex;
+        margin: 0;
+        @include mq-only("xs", "sm") {
+          display: block;
+        }
+        >li {
+          flex:33%;
+          @include mq-only("xs", "sm") {
+            margin-bottom:20px;
+          }
+          li {
+            padding: 4px 0;
+            p{
+              margin: 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .additional-note {
+    .info-note {
+      border: 1px solid #B6B6B6;
+      padding: 20px;
+      h4 {
+        color: #B6B6B6;
+      }
+    }
+  }
+
+  .shop-cart-section.order-details-list {
+    .added-items {
+      ul {
+        li{
+          &:first-child {
+            flex: 80%;
+            @include mq-only("xs", "sm") {
+              flex:70%;
+            }
+          }
+          &:last-child{
+            flex: 20%;
+            @include mq-only("xs", "sm") {
+              flex:40%;
+            }
+          }
+        }
+      }
+      .list-items {
+        margin: 20px 0;
+
+        .p-qty {
+          li{
+            &:first-child{
+              margin-top: 15px;
+              flex: 40%;
+            }
+
+            &:last-child{
+              flex: 60%;
+            }
+          }
+        }
+      }
+    }
+
+    .heading {
+      padding: 0;
+      h5 {
+        color: #B6B6B6;
+      }
+    }
+
+    .left-box {
+      .brandp-listing {
+        border: 0;
+        span{
+          color:#909090;
+        }
+      }
+    }
+    .right-box {
+      .card-body {
+        padding-top: 0;
+      }
+    }
+    
+  }
   
   // Favorites items
 
@@ -456,6 +638,24 @@
         border-top: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+      }
+    }
+  }
+
+  .quick-list {
+    .brandp-listing {
+      border: 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style:none;
+        }
+      }
+      .added-items {
+        figure {
+          margin: 15px 0;
+        }
       }
     }
   }

@@ -278,9 +278,9 @@ $jQ(function() {
     ]
   });
 
-  var height = Math.max($jQ(".left-col").height(), $jQ(".right-col").height());
+  /*var height = Math.max($jQ(".left-col").height(), $jQ(".right-col").height());
   $jQ(".left-col").height(height);
-  $jQ(".right-col").height(height);
+  $jQ(".right-col").height(height);*/
 
 });
 
@@ -357,7 +357,7 @@ function readmore() {
 
 $jQ(function(){
     
-  var current_fs, next_fs, previous_fs; //fieldsets
+  /*var current_fs, next_fs, previous_fs;
   var opacity;
   
   $jQ(".next").on("click", function(){
@@ -365,15 +365,11 @@ $jQ(function(){
       current_fs = $jQ(this).parent();
       next_fs = $jQ(this).parent().next();
       
-      //Add Class Active
       $jQ("#progressbar li").eq($jQ("fieldset").index(next_fs)).addClass("active");
       
-      //show the next fieldset
       next_fs.show(); 
-      //hide the current fieldset with style
       current_fs.animate({opacity: 0}, {
           step: function(now) {
-              // for making fielset appear animation
               opacity = 1 - now;
   
               current_fs.css({
@@ -391,16 +387,11 @@ $jQ(function(){
       current_fs = $jQ(this).parent();
       previous_fs = $jQ(this).parent().prev();
       
-      //Remove class active
       $jQ("#progressbar li").eq($jQ("fieldset").index(current_fs)).removeClass("active");
       
-      //show the previous fieldset
       previous_fs.show();
-  
-      //hide the current fieldset with style
       current_fs.animate({opacity: 0}, {
           step: function(now) {
-              // for making fielset appear animation
               opacity = 1 - now;
   
               current_fs.css({
@@ -411,23 +402,22 @@ $jQ(function(){
           }, 
           duration: 600
       });
-  });
+  });*/
   
   $jQ('.radio-group .radio').on("click", function(){
     $jQ(this).parent().find('.radio').removeClass('selected');
     $jQ(this).addClass('selected');
   });
   
-  $jQ(".submit").on("click", function(){
+  /*$jQ(".submit").on("click", function(){
       return false;
-      //window.location.href = "http://stackoverflow.com";
-  });
+  });*/
 
   $jQ('.datepicker1, .datepicker2').datepicker({format: 'mm-dd-yyyy'});
 
   });
 
 
-  function signupthanks() {
+  /*function signupthanks() {
     window.location.assign("http://localhost:3000/signup-thanks.html")
-  }
+  }*/
