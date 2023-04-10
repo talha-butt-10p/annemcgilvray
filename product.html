@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/dist/slick.css">
     <link rel="stylesheet" href="assets/dist/style.css">
     <link rel="stylesheet" href="/assets/sass/vendors/font-awesome.min.css">
+    
     <title>SASS</title>
   </head>
   <body>
 
-    <header>
+   <header>
       <div class="topcolors">
         <div></div>
         <div></div>
@@ -48,11 +49,147 @@
               <div class="col-md-5">
                 <div class="mini-list">
                   <ul>
-                    <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a></li>
+                    <li class="dropdown">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a>
+                      <ul class="dropdown-menu acc-dropdown-list">
+                          <li><a href="javascript:;">My Dashboard</a></li>
+                          <li><a href="javascript:;">My Profile</a></li>
+                          <li><a href="/new-favourite-list/">Favorites</a></li>
+                          <li><a href="javascript:;">Quick Order</a></li>
+                          <li><a href="javascript:;">Order History</a></li>
+                      </ul>
+                    </li>
                     <li><a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
                     <li class="dropdown my-cart-nav">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span></a>
-                      <ul class="dropdown-menu dropdown-cart" role="menu">
+                     
+                      <a href="#" id="cart">
+                        <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span>
+                      </a>
+                      
+                      <div class="shopping-cart">
+                    
+                        <ul class="shopping-cart-items">
+                          <li class="head-title">
+                            <div>
+                              <h4>My Shopping Cart</h4>
+                            </div>
+                            <div>
+                              <!--<a href="javascript:;"><img src="/assets/images/cross.png" /></a>-->
+                            </div>
+                          </li> 
+
+                          <li>
+                            <div>
+                              <h6>About Face Designs</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                          </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>About Face Designs</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>Blue Q</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>Chronicle Books</h6>
+                              <p>$25 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                        </ul>
+                      </div>
+ 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="" class="nav-link">All Categories</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Apparel</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Beauty</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Gift</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Gourmet</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Housewares & Tabletop</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Publishing</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Stationery</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Toy</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="mobile-disp">
+        <div class="container">
+          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
+            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+            <div class="mini-list">
+              <ul class="d-flex align-items-center">
+                <li><a href=""><span><img src="/assets/images/login.png" /></span></a></li>
+                <li class="dropdown my-cart-nav">
+                  <a href="#" id="cart">
+                    <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span>
+                  </a>
+                  
+                  <div class="shopping-cart">
+                
+                    <ul class="shopping-cart-items">
+                      <li>
+                        <span class="items d-flex">
+                          <span class=" item-left">
+                            <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                          </span>
+                          <span class=" text-left pl-3 w-75 item-right">
+                            <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                            <span>Min Qty: 3</span>
+                            <span class="cart-qty d-flex">
+                              <div class="input-group" style="width:50%">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-white btn-minuse" type="button">-</button>
+                                </span>
+                                <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-red btn-pluss" type="button">+</button>
+                                </span>
+                                </div><!-- /input-group -->
+                                <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                              </span>
+                            </span>
+                          </span>
+                        </li>
+                      
                         <li>
                           <span class="items d-flex">
                             <span class=" item-left">
@@ -75,71 +212,9 @@
                                 </span>
                               </span>
                             </span>
-                          </li>
-                          
-                        </ul>
-                      </li>
+                          </li>  
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div id="navbarContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a href="" class="nav-link">Clothing</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Books</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Lifestyle</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Accessories</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Toys</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Paper</a></li>
-              </ul>
-            </div>
-          </nav>
-          
-        </div>
-      </div>
-      <!-- Mobile Header -->
-      <div class="mobile-disp">
-        <div class="container">
-          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
-            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
-            <div class="mini-list">
-              <ul class="d-flex align-items-center">
-                <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
-                <li class="dropdown my-cart-nav">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">11</span> </a><span class="caret"></span></a>
-                  <ul class="dropdown-menu dropdown-cart" role="menu">
-                    <li>
-                      <span class="items d-flex">
-                        <span class=" item-left">
-                          <img src="assets/images/Image.png" width="100" height="100" alt="" />
-                        </span>
-                        <span class=" text-left pl-3 w-75 item-right">
-                          <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
-                          <span>Min Qty: 3</span>
-                          <span class="cart-qty d-flex">
-                            <div class="input-group" style="width:50%">
-                              <span class="input-group-btn">
-                                <button class="btn btn-white btn-minuse" type="button">-</button>
-                              </span>
-                              <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
-                              <span class="input-group-btn">
-                                <button class="btn btn-red btn-pluss" type="button">+</button>
-                              </span>
-                              </div><!-- /input-group -->
-                              <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
-                            </span>
-                          </span>
-                        </span>
-                      </li>
-                      
-                    </ul>
                   </li>
                   <!-- Mobile Toggle Button --> 
               <div class="mnu-icon">
@@ -160,7 +235,7 @@
           </div>
           <div class="topsearch-form mb-3">
             <div class="input-group rounded">
-              <input type="search" class="form-control" placeholder="Search for the things you love...we've got them">
+              <input type="search" class="form-control" placeholder="Search">
             </div>
           </div> 
         </div>
@@ -192,175 +267,184 @@
       <!-- End Of Mobile Header -->
     </header>
     
+    
     <section class="product-inner my-5">
       <div class="container">
-        <div class="inner-wrap">
-          <div class="col-md-7 col-xs-12 col-sm-12">
+        <div class="inner-wrap row flex-column-reverse flex-md-row">
+            <div class="col-sm-7 col-xs-12">
 
-            <div class="product-gallery">
-              
-              <div class="product-carousel-thumbs">
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-              </div>
-              
-              <div class="product-carousel">
-                <div>
-                  <span>
-                    <a class="btn-wish slidefavbtn"><i class="heart fa fa-heart-o"></i></a>
-                    <img src="/assets/images/product-quick-image.png" />
-                  </span>
-                </div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-                <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
-              </div>
-
-            </div>
-
-            <br class="clear" />
-
-            <div class="brand-specials-box about-brand margin-top-50">
-                <div class="pink-box">
-                  <h3>Specials</h3>
-                  <div class="desc">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <h4>Brand Order Minimum: $250</h4>
-                        <p>$1,000 Free Freight on Holiday only orders – can combine X and X to reach $1,000.</p>
-                        <p>Expires 12/20/2022</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <div class="brand-specials-box margin-top-50">
-                <div class="pink-box">
-                  <h3>About the Brand</h3>
-                  <div class="desc">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <p>When you want fun, you want Clever Idiots. We’re all about the bright colors, cute characters and unique designs of Japanese culture, and now, we’re on a mission to bring it home to you.</p>
-                        <p>Whether it’s a cozy Kigurumi or a Sushi Cat blind box, our products deliver happiness, humor and a lot of personality. After all, life’s too short to be boring. </p>
-                        <a href="javascript:;" class="borderbtn">Shop Brand Catalog</a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-          </div>
-          <div class="col-md-5 col-xs-12 col-sm-12">
-            
-            <div class="product-details">
-              
-              <div class="d-flex">
-                <span class="tag tag-new">New!</span>
-                <span class="tag tag-best">Best Seller</span>
-              </div>
-
-              <a class="brand-name" href="javascript:;">Clever Idiots</a>
-
-              <h3>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h3>
-
-              <ul class="sku-list">
-                <li>SKU: BL-001</li>
-                <li>UPC: 4990593328604</li>
-              </ul>
-
-              <div class="discount-line">
-                Special: If you buy XX or more, you get <span>XX% DISCOUNT</span>
-              </div>
-
-              <div class="order-min">
-                Brand Order Minimum: $250
+              <div class="product-gallery">
                 
-                <div class="progress">
-                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30"
-                     aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                  </div>
-               </div>
-
-               <span class="left-price">$93.75 left to go</span>
-
-              </div>
-
-              <div class="price">
-                $17.00 <span>PC</span>
-              </div>
-
-              <p>Min Qty: 3</p>
-              
-              <div class="add-to-cart-btn">
-                <span class="cart-qty d-flex">
-                  <div class="input-group" style="width:50%">
-                    <span class="input-group-btn">
-                      <button class="btn btn-white btn-minuse" type="button">-</button>
-                    </span>
-                    <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
-                    <span class="input-group-btn">
-                      <button class="btn btn-red btn-pluss" type="button">+</button>
-                    </span>
-                    </div><!-- /input-group -->
-                    <button class="ann-add-to-cart ml-2 greenbtn" style="width:50%">Add to Cart</button>
-                </span>
-              </div>
-
-              <hr />
-
-              <div class="details">
-                <strong>Details</strong>
+                <div class="product-carousel-thumbs">
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                </div>
                 
-                <p>Officially licensed by Studio Ghibli, My Neighbor Totoro "Totoro #1" Blind Box. 
-                  Beautifully designed and highly detailed, this figurine series comes in 6 joyous variations of the 
-                  'lord of the forest'. <span id="dots">...</span><span id="more">The perfect item to add some popular Japanese culture to your desk, bookshelf, 
-                  or anywhere else you'd like to show these awesome figurines off!</span></p>
-                <a href="javascript:;" onclick="readmore()" id="morebtn">Show More</a>
-              </div>
-
-              <br />
-              <hr class="dark" />
-
-                <div class="favourite-share">
-                  <ul>
-                    <li>
-                      <a class="btn-wish addfavbtn">
-                        Add to Favourite &nbsp; <i class="heart fa fa-heart-o"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);" >Share &nbsp; <i class="fa fa-share-alt"></i></a>
-                      <div id="shareBlock"></div>
-                    </li>
-                  </ul>
+                <div class="product-carousel">
+                  <div>
+                    <span>
+                      <a class="btn-wish slidefavbtn"><i class="heart fa fa-heart-o"></i></a>
+                      <img src="/assets/images/product-quick-image.png" />
+                    </span>
+                  </div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
+                  <div><span><img src="/assets/images/product-quick-image.png" /></span></div>
                 </div>
 
-              <hr class="dark" />
+              </div>
 
               <br class="clear" />
 
-              <div class="have-questions">
-                <div class="inner">
-                  <p>Have questions about <strong>“Spirited Away: Morph Mug 10oz (No Face and Susuwatari)”?</strong></p>
+              <div class="brand-specials-box about-brand margin-top-50">
+                  <div class="pink-box">
+                    <h3>Specials</h3>
+                    <div class="desc">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h4>Brand Order Minimum: $250</h4>
+                          <p>$1,000 Free Freight on Holiday only orders – can combine X and X to reach $1,000.</p>
+                          <p>Expires 12/20/2022</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
 
-                  <ul>
-                    <li><a href="javascript:;">Find a rep</a></li>
-                    <li><a href="javascript:;">Request appointment</a></li>
-                  </ul>
-                </div>
+              <div class="brand-specials-box margin-top-50">
+                  <div class="pink-box">
+                    <h3>About the Brand</h3>
+                    <div class="desc">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p>When you want fun, you want Clever Idiots. We’re all about the bright colors, cute characters and unique designs of Japanese culture, and now, we’re on a mission to bring it home to you.</p>
+                          <p>Whether it’s a cozy Kigurumi or a Sushi Cat blind box, our products deliver happiness, humor and a lot of personality. After all, life’s too short to be boring. </p>
+                          <a href="javascript:;" class="borderbtn">Shop Brand Catalog</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
 
             </div>
+            <div class="col-sm-5 col-xs-12">
+              
+              <div class="product-details">
+                
+                <div class="d-flex">
+                  <span class="tag tag-new">New!</span>
+                  <span class="tag tag-best">Best Seller</span>
+                </div>
 
-          </div>
+                <a class="brand-name" href="javascript:;">Clever Idiots</a>
+
+                <h3>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h3>
+
+                <ul class="sku-list">
+                  <li>SKU: BL-001</li>
+                  <li>UPC: 4990593328604</li>
+                </ul>
+
+                <div class="discount-line">
+                  Special: If you buy XX or more, you get <span>XX% DISCOUNT</span>
+                </div>
+
+                <div class="order-min">
+                  Brand Order Minimum: $250
+                  
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    </div>
+                </div>
+
+                <span class="left-price">$93.75 left to go</span>
+
+                </div>
+
+                <div class="price">
+                  $17.00 <span>PC</span>
+                </div>
+
+                <p>Min Qty: 3</p>
+                
+                <div class="add-to-cart-btn">
+                  <span class="cart-qty d-flex">
+                    <div class="input-group" style="width:50%">
+                      <span class="input-group-btn">
+                        <button class="btn btn-white btn-minuse" type="button">-</button>
+                      </span>
+                      <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                      <span class="input-group-btn">
+                        <button class="btn btn-red btn-pluss" type="button">+</button>
+                      </span>
+                      </div><!-- /input-group -->
+                      <button class="ann-add-to-cart ml-2 greenbtn" style="width:50%">Add to Cart</button>
+                  </span>
+                </div>
+
+                <hr />
+                
+                <div class="details">
+                  <strong>Details</strong>
+                  
+                  <p>Officially licensed by Studio Ghibli, My Neighbor Totoro "Totoro #1" Blind Box. 
+                    Beautifully designed and highly detailed, this figurine series comes in 6 joyous variations of the 
+                    'lord of the forest'. <span id="dots">...</span><span id="more">The perfect item to add some popular Japanese culture to your desk, bookshelf, 
+                    or anywhere else you'd like to show these awesome figurines off!</span></p>
+                  <a href="javascript:;" onclick="readmore()" id="morebtn">Show More</a>
+                </div>
+
+                <br />
+                <hr class="dark" />
+
+                  <div class="favourite-share">
+                    <ul>
+                      <li>
+                        <a class="btn-wish addfavbtn">
+                          Add to Favourite &nbsp; <i class="heart fa fa-heart-o"></i>
+                        </a>
+                      </li>
+                      <li class="share-icon">
+                        <a href="javascript:void(0);" >Share &nbsp; <i class="fa fa-share-alt"></i></a>
+                        <div id="shareBlock">
+                          <ul>
+                            <li>
+                              <a href=""><i class="fa fa-facebook" style="color:#4267B2;" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-twitter" style="color:#1DA1F2;" aria-hidden="true"></i></a>
+                              <a href=""><i class="fa fa-pinterest-p" style="color:#E60023;" aria-hidden="true"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                <hr class="dark" />
+
+                <br class="clear" />
+
+                <div class="have-questions">
+                  <div class="inner">
+                    <p>Have questions about <strong>“Spirited Away: Morph Mug 10oz (No Face and Susuwatari)”?</strong></p>
+
+                    <ul>
+                      <li><a href="javascript:;">Find a rep</a></li>
+                      <li><a href="javascript:;">Request appointment</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
         </div>
       </div>
     </section>
@@ -386,7 +470,7 @@
                 <li class="re-quantity text-lit-gray">Min: 6</li>
               </ul>
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -407,7 +491,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -425,7 +509,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -443,7 +527,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -461,7 +545,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -479,7 +563,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -497,7 +581,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -515,7 +599,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -533,7 +617,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -551,7 +635,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -569,7 +653,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
         </div>
@@ -596,7 +680,7 @@
                 <li class="re-quantity text-lit-gray">Min: 6</li>
               </ul>
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -617,7 +701,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -635,7 +719,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -653,7 +737,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -671,7 +755,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -689,7 +773,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -707,7 +791,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -725,7 +809,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -743,7 +827,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -761,7 +845,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
           <div class="recent-product-box">
@@ -779,7 +863,7 @@
               </ul>
               
               <a class="big-mouth d-block text-lit-gray">Big Mouth</a>
-              <button class="btn-add-cart ann-add-to-cart greenbtn">Add to cart</button>
+              <button class="btn-add-cart ann-add-to-cart greenbtn" data-toggle="modal" data-target="#addtocartview" tabindex="0">Add to cart</button>
             </div>
           </div>
         </div>
@@ -896,15 +980,108 @@
       </div>
     </footer>
 
+    <!-- Start Modal PopUps -->
+
+    <div class="modal fade popupquickview" id="productquickview" tabindex="-1" role="dialog" aria-labelledby="productquickview" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img src="assets/images/closebtn.png" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="quickview-thumbnail">
+                <img src="assets/images/product-quick-image.png" alt="Product-Image">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="quickview-detail">
+                <div class="d-flex">
+                  <span class="tag tag-new">New!</span>
+                  <span class="tag tag-best">Best Seller</span>
+                </div>
+                <h3>The Gone Fishin Coffee Mug</h3>
+                <ul class="d-flex">
+                  <li>SKU: BMMU-0016</li>
+                  <li>UPC: 817742022951</li>
+                </ul>
+                <h2>$7.50</h2>
+                <a href="#" class="view-full">View Full Details</a>
+                <div class="quickview-addcart-box">
+                  <span>Min Qty: 3</span>
+                  <span class="cart-qty d-flex mt-3">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-white btn-minuse" type="button">-</button>
+                      </span>
+                      <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                      <span class="input-group-btn">
+                        <button class="btn btn-red btn-pluss" type="button">+</button>
+                      </span>
+                      </div><!-- /input-group -->
+                      <button class="ann-add-to-cart ml-2 greenbtn">Add to Cart</button>
+                    </span>
+                    <div class="addtowish mt-3">
+                      <p><strong >
+                        <a class="btn-wish addfavbtn">
+                          Add to Favourite &nbsp; <i class="heart fa fa-heart-o"></i>
+                        </a>  
+                      </strong></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="addtocartview" tabindex="-1" role="dialog" aria-labelledby="addtocartview" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add to Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <img src="assets/images/closebtn.png" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+          <div class="row">
+            <span class="mini-items d-flex">
+              <span class=" item-left">
+                <img src="assets/images/Image.png" width="100" height="100" alt="" />
+              </span>
+              <span class=" text-left pl-3 item-right">
+                <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                <span>Min Qty: 3</span>
+                <span class="cart-qty d-flex">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button class="btn btn-white btn-minuse" type="button">-</button>
+                    </span>
+                    <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                    <span class="input-group-btn">
+                      <button class="btn btn-red btn-pluss" type="button">+</button>
+                    </span>
+                    </div><!-- /input-group -->
+                    <button class="ann-add-to-cart ml-2 greenbtn">Add to Cart</button>
+                  </span>
+                </span>
+            </span>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <script src="assets/dist/main.js"></script>
     <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.c-share.js"></script>
-    <script>
-      $('#shareBlock').cShare({
-        description: '',
-        showButtons: ['fb', 'twitter', 'pinterest']
-      });
-    </script>
-
+    
   </body>
 </html>

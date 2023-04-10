@@ -47,11 +47,147 @@
               <div class="col-md-5">
                 <div class="mini-list">
                   <ul>
-                    <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a></li>
+                    <li class="dropdown">
+                      <a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Hi Sarah!</a>
+                      <ul class="dropdown-menu acc-dropdown-list">
+                          <li><a href="javascript:;">My Dashboard</a></li>
+                          <li><a href="javascript:;">My Profile</a></li>
+                          <li><a href="/new-favourite-list/">Favorites</a></li>
+                          <li><a href="javascript:;">Quick Order</a></li>
+                          <li><a href="javascript:;">Order History</a></li>
+                      </ul>
+                    </li>
                     <li><a href=""><i class="fa fa-heart-o" aria-hidden="true"></i> Favorites</a></li>
                     <li class="dropdown my-cart-nav">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span></a>
-                      <ul class="dropdown-menu dropdown-cart" role="menu">
+                     
+                      <a href="#" id="cart">
+                        <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span>
+                      </a>
+                      
+                      <div class="shopping-cart">
+                    
+                        <ul class="shopping-cart-items">
+                          <li class="head-title">
+                            <div>
+                              <h4>My Shopping Cart</h4>
+                            </div>
+                            <div>
+                              <!--<a href="javascript:;"><img src="/assets/images/cross.png" /></a>-->
+                            </div>
+                          </li> 
+
+                          <li>
+                            <div>
+                              <h6>About Face Designs</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                          </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>About Face Designs</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>Blue Q</h6>
+                              <p>$250 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                           
+                           <li>
+                            <div>
+                              <h6>Chronicle Books</h6>
+                              <p>$25 minimum</p>
+                            </div>
+                            <div>
+                              <h5>$156.25</h5>
+                            </div>
+                           </li>  
+                        </ul>
+                      </div>
+ 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="" class="nav-link">All Categories</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Apparel</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Beauty</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Gift</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Gourmet</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Housewares & Tabletop</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Publishing</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Stationery</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Toy</a></li>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="mobile-disp">
+        <div class="container">
+          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
+            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
+            <div class="mini-list">
+              <ul class="d-flex align-items-center">
+                <li><a href=""><span><img src="/assets/images/login.png" /></span></a></li>
+                <li class="dropdown my-cart-nav">
+                  <a href="#" id="cart">
+                    <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">2</span> Cart</a><span class="caret"></span>
+                  </a>
+                  
+                  <div class="shopping-cart">
+                
+                    <ul class="shopping-cart-items">
+                      <li>
+                        <span class="items d-flex">
+                          <span class=" item-left">
+                            <img src="assets/images/Image.png" width="100" height="100" alt="" />
+                          </span>
+                          <span class=" text-left pl-3 w-75 item-right">
+                            <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
+                            <span>Min Qty: 3</span>
+                            <span class="cart-qty d-flex">
+                              <div class="input-group" style="width:50%">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-white btn-minuse" type="button">-</button>
+                                </span>
+                                <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-red btn-pluss" type="button">+</button>
+                                </span>
+                                </div><!-- /input-group -->
+                                <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
+                              </span>
+                            </span>
+                          </span>
+                        </li>
+                      
                         <li>
                           <span class="items d-flex">
                             <span class=" item-left">
@@ -74,71 +210,9 @@
                                 </span>
                               </span>
                             </span>
-                          </li>
-                          
-                        </ul>
-                      </li>
+                          </li>  
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
-              <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div id="navbarContent" class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a href="" class="nav-link">Clothing</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Books</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Lifestyle</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Accessories</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Toys</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Paper</a></li>
-              </ul>
-            </div>
-          </nav>
-          
-        </div>
-      </div>
-      <!-- Mobile Header -->
-      <div class="mobile-disp">
-        <div class="container">
-          <div class="d-flex justify-content-between mobile-header pt-3 pb-3">
-            <div class="logo"><a href="javascript:;"><img src="assets/images/logo.png" /></a></div>
-            <div class="mini-list">
-              <ul class="d-flex align-items-center">
-                <li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
-                <li class="dropdown my-cart-nav">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img src="assets/images/shopping_cart.png" class="d-inline-block" alt=" cart"><span class="cart-counter">11</span> </a><span class="caret"></span></a>
-                  <ul class="dropdown-menu dropdown-cart" role="menu">
-                    <li>
-                      <span class="items d-flex">
-                        <span class=" item-left">
-                          <img src="assets/images/Image.png" width="100" height="100" alt="" />
-                        </span>
-                        <span class=" text-left pl-3 w-75 item-right">
-                          <h4>Spirited Away: Morph Mug 10oz (No Face and Susuwatari)</h4>
-                          <span>Min Qty: 3</span>
-                          <span class="cart-qty d-flex">
-                            <div class="input-group" style="width:50%">
-                              <span class="input-group-btn">
-                                <button class="btn btn-white btn-minuse" type="button">-</button>
-                              </span>
-                              <input type="text" class="form-control no-padding add-color text-center height-25" maxlength="3" value="0">
-                              <span class="input-group-btn">
-                                <button class="btn btn-red btn-pluss" type="button">+</button>
-                              </span>
-                              </div><!-- /input-group -->
-                              <button class="ann-add-to-cart ml-2" style="width:50%">Add to Cart</button>
-                            </span>
-                          </span>
-                        </span>
-                      </li>
-                      
-                    </ul>
                   </li>
                   <!-- Mobile Toggle Button --> 
               <div class="mnu-icon">
@@ -159,7 +233,7 @@
           </div>
           <div class="topsearch-form mb-3">
             <div class="input-group rounded">
-              <input type="search" class="form-control" placeholder="Search for the things you love...we've got them">
+              <input type="search" class="form-control" placeholder="Search">
             </div>
           </div> 
         </div>

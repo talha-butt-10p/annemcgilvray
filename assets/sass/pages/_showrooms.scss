@@ -93,7 +93,6 @@
 }
 
 .rooms-detail-banner {
-  background: url(/assets/images/showroom-banner.png) no-repeat;
   background-size: 100%;
   color: #fff;
   padding: 20px 0;
@@ -187,6 +186,11 @@
     margin: 0 25px;
     text-align: center;
     float: none;
+
+    @include mq("md", max) {
+      flex:100%;
+      margin: 10px 20px;
+    }
 
     &:hover {
       background-color: #B9DB8C;

@@ -276,33 +276,47 @@
     .item-right {
         width: 70%;
     }
-}
 
-.cart-qty{
-
-    margin-top: 10px;
-
-    .input-group{
-        outline: none;
-        border: 1px solid $cart-input-border;
-        border-radius: 8px;
-        
-        input{
-            border: none;
-            outline: none;
-            padding: 8px;
-            &:hover, &:focus, &:active{
-                border: none!important;
-            outline: none!important;
-            box-shadow: none;
-            }
-        }
-        button{
-            padding: 2px 16px;
-            font-size: 20px;
+    @include mq-only("xs", "sm") {
+        h4 {
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }
+
+    .cart-qty{
+          
+          margin-top: 5px;
+          .input-group{
+              outline: none;
+              border: 1px solid $cart-input-border;
+              border-radius: 8px;
+              width: 50%;
+              @include mq-only("xs", "sm") {
+                width: 100%;
+              }
+              
+              input{
+                  border: none;
+                  outline: none;
+                  padding: 8px;
+                  &:hover, &:focus, &:active{
+                      border: none!important;
+                  outline: none!important;
+                  box-shadow: none;
+                  }
+              }
+          }
+          button{
+            font-size: 15px;
+            width: 50%;
+            @include mq-only("xs", "sm") {
+              width: 100%; 
+              font-size: 14px;             
+            }
+        }
+      }
 
 
 .dropdown-menu.acc-dropdown-list {

@@ -554,6 +554,12 @@
     background-image: url(../images/searchBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mq-only("xs", "sm") {
+      background-image: url(/assets/images/search-banner-mobile.jpg);
+      background-size: 100%;
+    }
+
     .search-banner-wrapper {
       .trending-searcch-box {
         max-width: 680px;
@@ -561,6 +567,12 @@
         text-align: center;
         p {
           font-size: 22px;
+          strong {
+            display: block;
+            @include mq-only("xs", "sm") {
+              display: inline;
+            }
+          }
         }
   
         .has-search {
@@ -597,6 +609,9 @@
           li {
             list-style: none;
             margin: 12px 10px;
+            @include mq-only("xs", "sm") {
+              margin:6px 5px;
+            }
             a {
               display: inline-block;
               text-decoration: none;
@@ -620,18 +635,30 @@
   
   .reason-to-work {
     margin-top: 50px;
+    @include mq("md", max) {
+      margin-top: 0;
+    }
     
     .heading-title {
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+      background: url(/assets/images/left-dots.png) no-repeat;
+      height: 60px;
+      background-repeat: repeat-x;
+      background-position: 0 9px;
+
       @include mq("md", max) {
         display: block;
+        background: none;
       }
       h2 {
         position: relative;
         white-space: nowrap;
         margin: 0 10px;
+        background: #fff;
+        padding: 5px;
 
         @include mq("md", max) {
           font-size: 22px;
@@ -645,11 +672,14 @@
   
       .left-dots {
         img {
+          display: none;
           @include mq("md", max) {
+            display: block;
             margin: auto;
             margin-bottom: 20px;
           }
         }
+        
       }
     }
     .reasonwork-card {
@@ -676,6 +706,8 @@
     background-color: $primery-blue;
     padding-top: 70px;
     text-align:left;
+    position: relative;
+    z-index: 0;
     .left-avatar-content {
       .avatar-md {
         width: 152px;

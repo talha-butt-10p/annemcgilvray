@@ -288,6 +288,26 @@
   }
 }
 
+  #edit-profile {
+    .checkboxes {
+      margin-top: 15px;
+      ul{
+        padding: 0;
+        li{
+          list-style: none;
+          display: inline-block;
+          margin-right: 10px;
+           
+        }
+      }
+
+      a {
+        display: block;
+        color: #909090;
+        text-decoration:underline;
+      }
+    }
+  }
 
   #profile-items {
     margin: 0;
@@ -395,6 +415,19 @@
     }
   }
 
+  .make-defaults {
+    .right-area{
+      ul{
+        li{
+          a{
+            font-size: 15px;
+            float:right;
+          }
+        }
+      }
+    }
+  }
+
   .order-details {
 
     ul{
@@ -480,7 +513,9 @@
       }
       .list-items {
         margin: 20px 0;
-
+        @include mq-only("xs", "sm") {
+          margin: 35px 0;
+        }
         .p-qty {
           li{
             &:first-child{

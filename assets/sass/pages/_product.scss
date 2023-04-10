@@ -3,6 +3,9 @@
   .heading-title {
     h2{
       color: #F5821F;
+      @include mq-only("xs", "sm") {
+        font-size: 22px;
+      }
     }
   }
 
@@ -23,6 +26,10 @@
     h2{
       color: #2DB1FF; 
       width: 50%;
+      @include mq-only("xs", "sm") {
+        width:100%;
+        font-size: 22px;
+      }
     }
 
     a {
@@ -30,7 +37,9 @@
       color: #1E1E1E;
       text-decoration: underline;
       text-align: right;
-
+      @include mq-only("xs", "sm") {
+        margin-top:10px;
+      }
     }
   }
 
@@ -99,6 +108,9 @@
 
       h3 {
         line-height: 40px;
+        @include mq-only("xs", "sm") {
+          font-size: 24px;
+        }
       }
 
       a.brand-name {
@@ -133,6 +145,9 @@
       .order-min {
         margin: 20px 0 5px;
         font-size: 20px;
+        @include mq-only("xs", "sm") {
+          font-size: 16px;
+        }
 
         .progress {
           margin: 10px 0 5px;
@@ -160,24 +175,8 @@
 
       .add-to-cart-btn {
         width: 60%;
-
-        .cart-qty {
-          .input-group{
-            outline: none;
-            border: 1px solid #909090;
-            border-radius: 8px;
-
-            input {
-              border: none;
-              outline: none;
-              padding: 8px;
-            }
-
-            button {
-              padding: 2px 16px;
-              font-size: 20px;
-            }
-          }
+        @include mq-only("xs", "sm") {
+          width: 100%;
         }
       }
      
@@ -206,11 +205,17 @@
 .product-carousel-thumbs {
   float: left;
   width: 16%;
+  @include mq-only("xs", "sm") {
+    display: none;
+  }
 }
 
 .product-carousel {
   float: left;
   width: 84%;
+  @include mq-only("xs", "sm") {
+    width:100%;
+  }
 }
 
 .product-carousel, 
@@ -331,6 +336,17 @@
           right: 0;
           bottom:40px;
           display: none;
+          ul{
+            padding:0;
+            border: 1px solid #9090905c;
+            li{
+              list-style: none;
+              a{
+                display: inline-block;
+                padding: 10px;
+              }
+            }
+          }
         }
       }
 

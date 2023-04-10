@@ -276,7 +276,7 @@ a {
   font-size: 15px;
   border: 1px solid #1e1e1e;
   border-radius: 8px;
-  padding: 4px 25px;
+  padding: 5px 25px;
   background: none;
   text-transform:capitalize;
   color: #000;
@@ -471,5 +471,25 @@ hr.dark {
   .fa.heart {
     color: #EE2E2A;
   }
+}
+
+.mobile-version{
+  display: none;
+}
+.desktop-version {
+  display: block;
+}
+
+@include mq-only("xs", "sm") {
+  .mobile-version {
+    display: block;
+  }
+  .desktop-version {
+    display: none;
+  }
+}
+
+.disabled-link {
+  pointer-events: none;
 }
 
