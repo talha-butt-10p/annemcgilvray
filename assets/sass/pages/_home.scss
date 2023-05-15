@@ -275,13 +275,13 @@
   
         &:nth-child(2) {
           .cat-thumbnail {
-            background-color: #8ac33e;
+            background-color: #f5821f;
           }
         }
   
         &:nth-child(3) {
           .cat-thumbnail {
-            background-color: #f5821f;
+            background-color: #8ac33e;
           }
         }
         &:nth-child(4) {
@@ -295,6 +295,33 @@
           }
         }
         &:nth-child(6) {
+          .cat-thumbnail {
+            background-color: #007dc6;
+          }
+        }
+        
+        &:nth-child(7) {
+          .cat-thumbnail {
+            background-color: #f5821f;
+          }
+        }
+  
+        &:nth-child(8) {
+          .cat-thumbnail {
+            background-color: #8ac33e;
+          }
+        }
+        &:nth-child(9) {
+          .cat-thumbnail {
+            background-color: #ee2e2a;
+          }
+        }
+        &:nth-child(10) {
+          .cat-thumbnail {
+            background-color: #f5821f;
+          }
+        }
+        &:nth-child(11) {
           .cat-thumbnail {
             background-color: #007dc6;
           }
@@ -644,10 +671,23 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      background: url(/assets/images/left-dots.png) no-repeat;
+      //background: url(/assets/images/left-dots.png) no-repeat;
       height: 60px;
       background-repeat: repeat-x;
       background-position: 0 9px;
+
+      &:before{
+        content: "";
+        background: url(/assets/images/left-dots.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 100%;
+        height: 43px;
+      }
+      
 
       @include mq("md", max) {
         display: block;
@@ -658,11 +698,12 @@
         white-space: nowrap;
         margin: 0 10px;
         background: #fff;
-        padding: 5px;
-
+        padding: 5px 25px 5px 40px;
+ 
         @include mq("md", max) {
           font-size: 22px;
         }
+
       }
       .right-dots {
         @include mq("md", max) {

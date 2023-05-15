@@ -1,6 +1,6 @@
 var $jQ = jQuery.noConflict();
 
-$jQ(function() {
+$jQ(function(){
 
   // your code
   var window = $jQ(window);
@@ -15,12 +15,7 @@ $jQ(function() {
 
   $jQ('.btn-pluss').on('click', function(){            
     $jQ(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
-  });
-
-  /*$(".btn-wish").click(function() {
-    $('.heart.fa').toggleClass('red');
-    $('.heart.fa').toggleClass("fa-heart fa-heart-o");
-  });*/
+  }); 
 
   $jQ('#profile-items a[href^="#"]').on('click', function(){
     $jQ(this).addClass('active');
@@ -31,11 +26,6 @@ $jQ(function() {
       return;
     }  
   });
-
-  //$jQ('.recent-product-slider .btn-wish.active img').attr('src', 'assets/images/wishactive.png');
-
-  
-// $(".hero-left").height( $(".hero-right").height() );
 
 //Home Page Recent View Slider
   $jQ('.recent-product-slider').slick({
@@ -74,38 +64,38 @@ $jQ(function() {
 // Slcik Slider for Product Category Section
 
   $jQ('.product-cat-outer').slick({
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-      dots: false,
-      prevArrow: false,
-      nextArrow: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    infinite: false,
+    speed: 300,
+    slidesToShow: 7,
+    slidesToScroll: 2,
+    variableWidth: true,
+    prevArrow: false,
+    nextArrow: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
         }
-        
-      ]
-      
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 
 // New Brands Slider
@@ -263,15 +253,10 @@ $jQ(function() {
     ]
   });
 
-  /*var height = Math.max($jQ(".left-col").height(), $jQ(".right-col").height());
-  $jQ(".left-col").height(height);
-  $jQ(".right-col").height(height);*/
-
   $jQ('.mobile-filter-option a').on('click',function(e){
     $jQ('.brand-filters-cards .filter-group').slideToggle('slow');
   });
 });
-
 
 //Home Page Page wish btn active
 $jQ(function() {
@@ -338,79 +323,12 @@ function readmore() {
 }
 
 $jQ(function(){
-    
-  /*var current_fs, next_fs, previous_fs;
-  var opacity;
-  
-  $jQ(".next").on("click", function(){
-      
-      current_fs = $jQ(this).parent();
-      next_fs = $jQ(this).parent().next();
-      
-      $jQ("#progressbar li").eq($jQ("fieldset").index(next_fs)).addClass("active");
-      
-      next_fs.show(); 
-      current_fs.animate({opacity: 0}, {
-          step: function(now) {
-              opacity = 1 - now;
-  
-              current_fs.css({
-                  'display': 'none',
-                  'position': 'relative'
-              });
-              next_fs.css({'opacity': opacity});
-          }, 
-          duration: 600
-      });
-  });
-  
-  $jQ(".previous").on("click", function(){
-      
-      current_fs = $jQ(this).parent();
-      previous_fs = $jQ(this).parent().prev();
-      
-      $jQ("#progressbar li").eq($jQ("fieldset").index(current_fs)).removeClass("active");
-      
-      previous_fs.show();
-      current_fs.animate({opacity: 0}, {
-          step: function(now) {
-              opacity = 1 - now;
-  
-              current_fs.css({
-                  'display': 'none',
-                  'position': 'relative'
-              });
-              previous_fs.css({'opacity': opacity});
-          }, 
-          duration: 600
-      });
-  });*/
-  
+     
   $jQ('.radio-group .radio').on("click", function(){
     $jQ(this).parent().find('.radio').removeClass('selected');
     $jQ(this).addClass('selected');
   });
   
-  /*$jQ(".submit").on("click", function(){
-      return false;
-  });*/
-
-  /*$jQ('.datepicker').datepicker({
-    language: "es",
-    autoclose: true,
-    format: "dd/mm/yyyy"
-  });*/
-
-
-  // Share Button
-
-  /*$jQ('.favourite-share ul li.share-icon a').on('click', function(){
-    $jQ('#shareBlock').fadeToggle();
-  });*/
-  
-
   });
  
-  /*function signupthanks() {
-    window.location.assign("http://localhost:3000/signup-thanks.html")
-  }*/
+  
